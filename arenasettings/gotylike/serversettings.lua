@@ -6,39 +6,17 @@ ServerSettings.DisabledEquipPoints.add("Medium", Loadouts.EquipPoints.Tertiary)
 ServerSettings.DisabledEquipPoints.add("Heavy", Loadouts.EquipPoints.Tertiary)
 
 -- Weapon Bans
-ServerSettings.MutuallyExclusiveItems.add("Light", "Phase Rifle", "Light", "Rage")
-ServerSettings.MutuallyExclusiveItems.add("Light", "SAP20", "Light", "Rage")
-ServerSettings.MutuallyExclusiveItems.add("Light", "BXT1", "Light", "Rage")
-ServerSettings.MutuallyExclusiveItems.add("Light", "BXT1A", "Light", "Rage")
-ServerSettings.MutuallyExclusiveItems.add("Light", "Stealth Pack", "Light", "Shocklance")
-ServerSettings.MutuallyExclusiveItems.add("Light", "Stealth Pack", "Light", "Super Heavy")
-ServerSettings.MutuallyExclusiveItems.add("Light", "Stealth Pack", "Light", "Reach")
-
---ServerSettings.BannedItems.add("Light", "SAP20")
-
-ServerSettings.BannedItems.add("Medium", "Proximity Grenades")
-ServerSettings.BannedItems.add("Medium", "Plasma Gun")
 -- Mines
-ServerSettings.BannedItems.add("Light", "Claymore Mines")
-ServerSettings.BannedItems.add("Light", "Prism Mines")
-ServerSettings.BannedItems.add("Light", "Motion Mines")
-ServerSettings.BannedItems.add("Medium", "Motion Sensor")
-ServerSettings.BannedItems.add("Heavy", "Mines")
 -- Packs
 --ServerSettings.BannedItems.add("Light", "Stealth Pack")
 -- Perks
-ServerSettings.BannedItems.add("Light", "Safety Third")
-ServerSettings.BannedItems.add("Medium", "Safety Third")
-ServerSettings.BannedItems.add("Heavy", "Safety Third")
-
-
 
 defaultGotySettings = {
     -- Time settings
     TimeLimit = 25,
-    WarmupTime = 600,
+    WarmupTime = 15,
     RespawnTime = 5,
-    SniperRespawnDelay = 5,
+    SniperRespawnDelay = 0,
     EndMatchWaitTime = 15,
     AmmoPickupLifespan = 60,
     CTFFlagTimeout = 40,
