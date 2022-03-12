@@ -1,3 +1,8 @@
+# Azure Dir
+gamesettings
+install.sh
+taserver.sh
+
 # Compiled Lua sources
 luac.out
 
