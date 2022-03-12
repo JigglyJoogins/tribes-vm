@@ -1,2 +1,5 @@
-# tribes vm
- Taserver config ran my azure vm
+# Tribes VM For NA Servers
+
+pugsettings
+
+arenasettings
