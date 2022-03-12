@@ -1,2 +1,2 @@
-# tribes vm
- Taserver config ran my azure vm
+# twibes VM
+ Taserver config ran in my azure vm
