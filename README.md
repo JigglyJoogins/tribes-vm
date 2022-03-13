@@ -21,3 +21,8 @@ Commands to copy lua gamesettings folder to the server
 Command to restart the specific game server
 
 `./taserver.sh -d gamesettings`
+
+\
+Command to see current running servers
+
+`docker ps --format "{{.Names}}"`
