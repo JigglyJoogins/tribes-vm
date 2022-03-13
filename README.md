@@ -18,9 +18,11 @@ Commands to copy lua gamesettings folder to the server
 `pscp -r -i C:\path\to\key.ppk C:\Users\path\to\gamesettings azureuser@twibes-w2mwc.centralus.cloudapp.azure.com:/home/azureuser`
 
 \
-Command to restart the specific game server
+Command to restart the specific game servers
 
 `./taserver.sh -d gamesettings`
+
+`./taserver.sh -d gamesettings -p 2`
 
 \
 Command to see current running servers
