@@ -22,7 +22,7 @@ Command to restart the specific game servers
 
 `./taserver.sh -d gamesettings`
 
-`./taserver.sh -d gamesettings -p 2`
+`./taserver.sh -d gamesettings -p 2` (or whatever port offset instead of 2)
 
 \
 Command to see current running servers
