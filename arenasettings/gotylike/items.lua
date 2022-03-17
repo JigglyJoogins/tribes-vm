@@ -324,7 +324,7 @@ itemChangeDefs = {
                 AccuracyLossOnShot = 0,
                 AccuracyLossMax = 0,
                 AccuracyCorrectionRate = 0,
-                CollisionSize = 25,
+                CollisionSize = 50,
                 ProjectileLifespan = 1.0,
                 -- GOTY damage falloff
                 MinDamageProportion = 0.75,
