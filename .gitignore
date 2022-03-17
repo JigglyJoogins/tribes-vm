@@ -2,6 +2,15 @@
 gamesettings
 install.sh
 taserver.sh
+.profile
+.ssh
+.cache
+.bashrc
+.bash_history
+.bash_ignore
+.profile
+.sudo_as_admin_successful
+.wget-hats
 
 # Compiled Lua sources
 luac.out
