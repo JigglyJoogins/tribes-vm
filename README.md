@@ -4,6 +4,7 @@ pugsettings
 
 arenasettings
 
+d2s_v4
 
 ## Useful Commands
 
