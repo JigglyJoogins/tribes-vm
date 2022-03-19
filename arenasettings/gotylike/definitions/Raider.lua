@@ -76,8 +76,9 @@ local itemDefs = {
     {
         name="Plasma Gun", 
         changes={
-            Damage = 400,
+            Damage = 200,
             DirectHitMultiplier = 1.25,
+            ImpactMomentum = 0.0,
             ExplosiveRadius = 270,
             ProjectileInheritance = 0.5,
             ProjectileSpeed = 3620,

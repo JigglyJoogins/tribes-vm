@@ -17,7 +17,7 @@ ServerSettings.MutuallyExclusiveItems.add("Light", "Stealth Pack", "Light", "Rea
 --ServerSettings.BannedItems.add("Light", "SAP20")
 
 ServerSettings.BannedItems.add("Medium", "Proximity Grenades")
-ServerSettings.BannedItems.add("Medium", "Plasma Gun")
+--ServerSettings.BannedItems.add("Medium", "Plasma Gun")
 -- Mines
 ServerSettings.BannedItems.add("Light", "Claymore Mines")
 ServerSettings.BannedItems.add("Light", "Prism Mines")
