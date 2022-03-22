@@ -13,7 +13,7 @@ Logger.debug("----- GOTYLike Preset Applied -----")
 
 -- Server Information
 ServerSettings.Description = "NA Pugs"
-ServerSettings.Motd = "oh dear this might be less? scuffed"
+ServerSettings.Motd = "now hopefully featuring evil"
 ServerSettings.Password = "baboon"
 ServerSettings.GameSettingMode = ServerSettings.GameSettingModes.GOTY
 
@@ -68,6 +68,7 @@ ServerSettings.MapRotation.add(Maps.CTF.TempleRuins)
 ServerSettings.MapRotation.addCustom("TrCTF-Blues")
 ServerSettings.MapRotation.addCustom("TrCTF-Incidamus")
 ServerSettings.MapRotation.addCustom("TrCTF-Periculo")
+ServerSettings.MapRotation.addCustom("TrCTF-Fracture")
 --[[
 ]]
 -------------- Player Made Maps --------------
