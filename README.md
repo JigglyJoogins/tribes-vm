@@ -23,6 +23,8 @@ Commands to copy lua gamesettings folder to the server
 \
 Command to restart the specific game servers
 
+`./taserver.sh -d gamesettings -c CookedPC`
+
 `./taserver.sh -d gamesettings`
 
 `./taserver.sh -d gamesettings -p 2` (or whatever port offset instead of 2)
