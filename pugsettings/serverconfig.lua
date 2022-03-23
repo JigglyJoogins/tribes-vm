@@ -68,7 +68,6 @@ ServerSettings.MapRotation.add(Maps.CTF.TempleRuins)
 ServerSettings.MapRotation.addCustom("TrCTF-Blues")
 ServerSettings.MapRotation.addCustom("TrCTF-Incidamus")
 ServerSettings.MapRotation.addCustom("TrCTF-Periculo")
-ServerSettings.MapRotation.addCustom("TrCTF-Fracture")
 --[[
 ]]
 -------------- Player Made Maps --------------
