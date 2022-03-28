@@ -33,3 +33,7 @@ Command to restart the specific game servers
 Command to see current running servers
 
 `docker ps --format "{{.Names}}"`
+
+Command to run loginserver
+
+docker run -d --cap-add NET_ADMIN -p "9000:9000/tcp" -p "9001:9001/tcp" -p "9080:9080/tcp" loginserver

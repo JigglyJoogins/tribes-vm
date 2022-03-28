@@ -47,15 +47,58 @@ local commands = {
             Admin.SendConsoleMessageToAllPlayers("Map ended by " .. player)
         end,
     },
+    {
+        name      = "sm",
+        arguments = {},
+        func      = function (player, role)
+            Admin.Game.StartMap()
+            Admin.SendConsoleMessageToPlayer(player, "Map started")
+            Admin.SendConsoleMessageToAllPlayers("Map started by " .. player)
+        end,
+    },
+    {
+        name      = "em",
+        arguments = {},
+        func      = function (player, role)
+            Admin.Game.EndMap()
+            Admin.SendConsoleMessageToPlayer(player, "Map ended")
+            Admin.SendConsoleMessageToAllPlayers("Map ended by " .. player)
+        end,
+    },
 }
 
 function doSetupRoles(roles)
     for cmdIdx, command in pairs(commands) do
         Admin.Command.define(command.name, command.arguments, command.func)
     end
-    
+    -------------- With Login --------------
     for roleIdx, role in pairs(roles) do
+        Admin.Roles.add(role.name, role.password, role.canLua)
+        
+        for cmdIdx, cmdName in pairs(role.commands) do
+            Admin.Roles.addAllowedCommand(role.name, cmdName)
+        end
+    end
+end
+
+function doSetupRoles(roles, loginlessRoles)
+    for cmdIdx, command in pairs(commands) do
+        Admin.Command.define(command.name, command.arguments, command.func)
+    end
+
+    -------------- With Login --------------
+    for roleIdx, role in pairs(roles) do
+        Admin.Roles.add(role.name, role.password, role.canLua)
+
+        for cmdIdx, cmdName in pairs(role.commands) do
+            Admin.Roles.addAllowedCommand(role.name, cmdName)
+        end
+    end
+
+    -------------- Without Login --------------
+    for roleIdx, role in pairs(loginlessRoles) do
         Admin.Roles.addLoginlessRole(role.name, role.canLua)
+
         for cmdIdx, cmdName in pairs(role.commands) do
             Admin.Roles.addAllowedCommand(role.name, cmdName)
         end

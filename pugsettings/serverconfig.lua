@@ -18,23 +18,38 @@ ServerSettings.Password = "baboon"
 ServerSettings.GameSettingMode = ServerSettings.GameSettingModes.GOTY
 
 -------------- ADMINISTRATION --------------
-
-
+-------------- With Login (Must modify admin.lua) --------------
 local roles = {
+    -- {
+    --     name     = "admin",
+    --     password = "administrator", -- <<< Set the password!
+    --     commands = {"NextMap", "NextMapName", "StartMap", "EndMap","sm","em"},
+    --     canLua   = true, -- Admin can execute arbitrary Lua!
+    -- },
+    -- {
+    --     name     = "mod",
+    --     password = "moderator", -- <<< Set the password!
+    --     commands = {"StartMap", "EndMap","sm","em"},
+    --     canLua   = false,
+    -- },
+}
+    
+    -------------- Without Login --------------
+local loginlessRoles = {
     {
         name     = "admin",
-        commands = {"NextMap", "NextMapName", "StartMap", "EndMap"},
+        commands = {"NextMap", "NextMapName", "StartMap", "EndMap","sm","em"},
         canLua   = true,
     },
     {
         name     = "mod",
-        commands = {"NextMap", "NextMapName", "StartMap", "EndMap"},
+        commands = {"StartMap", "EndMap","sm","em"},
         canLua   = false,
     },
 }
-
--- To set up admin / moderator roles, uncomment below
-doSetupRoles(roles)
+    
+-- To set up admin / moderator roles, uncomment above
+doSetupRoles(roles, loginlessRoles)
 
 Admin.Roles.addMember("admin", "fuck")
 Admin.Roles.addMember("mod", "evil")
