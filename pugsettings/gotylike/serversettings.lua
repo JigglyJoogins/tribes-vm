@@ -27,12 +27,6 @@ ServerSettings.BannedItems.add("Heavy", "Mines")
 -- Packs
 --ServerSettings.BannedItems.add("Light", "Stealth Pack")
 -- Perks
-ServerSettings.BannedItems.add("Light", "Safety Third")
-ServerSettings.BannedItems.add("Medium", "Safety Third")
-ServerSettings.BannedItems.add("Heavy", "Safety Third")
-
-
-
 defaultGotySettings = {
     -- Time settings
     TimeLimit = 25,
