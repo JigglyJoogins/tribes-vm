@@ -38,12 +38,12 @@ local roles = {
 local loginlessRoles = {
     {
         name     = "admin",
-        commands = {"NextMap", "NextMapName", "StartMap", "EndMap","sm","em"},
+        commands = {"NextMap", "NextMapName", "StartMap", "EndMap","sm","em","help"},
         canLua   = true,
     },
     {
         name     = "mod",
-        commands = {"StartMap", "EndMap","sm","em"},
+        commands = {"StartMap", "EndMap","sm","em","help"},
         canLua   = false,
     },
 }
@@ -80,15 +80,14 @@ ServerSettings.MapRotation.add(Maps.CTF.Raindance)
 ServerSettings.MapRotation.add(Maps.CTF.Stonehenge)
 ServerSettings.MapRotation.add(Maps.CTF.Tartarus)
 ServerSettings.MapRotation.add(Maps.CTF.TempleRuins)
-ServerSettings.MapRotation.addCustom("TrCTF-Blues")
-ServerSettings.MapRotation.addCustom("TrCTF-Incidamus")
-ServerSettings.MapRotation.addCustom("TrCTF-Periculo")
 --[[
 ]]
 -------------- Player Made Maps --------------
 -- Note: These need to be installed manually on the server prior to enabling.
---[[
-]]
+ServerSettings.MapRotation.addCustom("TrCTF-Blues")
+ServerSettings.MapRotation.addCustom("TrCTF-Incidamus")
+ServerSettings.MapRotation.addCustom("TrCTF-Periculo")
+ServerSettings.MapRotation.addCustom("TrCTF-Fracture")
 -------------- Arena --------------
 --[[
 ServerSettings.MapRotation.add(Maps.Arena.WalledIn)

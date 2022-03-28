@@ -65,6 +65,14 @@ local commands = {
             Admin.SendConsoleMessageToAllPlayers("Map ended by " .. player)
         end,
     },
+    {
+        name      = "help",
+        arguments = {},
+        func      = function (player, role)
+            Admin.SendConsoleMessageToPlayer(player, "Use '/srvcmd sm' to start maps.")
+            Admin.SendConsoleMessageToPlayer(player, "Use '/srvcmd em' to end the map.")
+        end,
+    },
 }
 
 function doSetupRoles(roles)
