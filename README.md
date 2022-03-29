@@ -8,6 +8,12 @@ arenasettings
 
 d2s_v4
 
+CookedPC is where the map files go.
+
+loginserver is loginserver data
+
+taserver contains loginserver files (game_items.py)
+
 ## Useful Commands
 
 ### Commands to copy lua gamesettings and loginserver loadouts to the server
@@ -52,7 +58,13 @@ Only run once.
 
 ### Command to update loginserver loadouts
 
-`wget -O taserver/common/game_items.py https://raw.githubusercontent.com/ToddButler93/taserver/loadoutChanges/common/game_items.py`
+`git pull origin main`
+
+or
+
+`wget -O /home/azureuser/taserver/common/game_items.py https://raw.githubusercontent.com/JigglyJoogins/tribes-vm/main/taserver/common/game_items.py`
+
+then
 
 `docker restart loginserver`
 
