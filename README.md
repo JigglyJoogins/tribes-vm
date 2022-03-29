@@ -10,7 +10,7 @@ d2s_v4
 
 ## Useful Commands
 
-### Commands to copy lua gamesettings folder to the server
+### Commands to copy lua gamesettings and loginserver loadouts to the server
 
 >Copy github repo to vm
 
@@ -21,13 +21,21 @@ d2s_v4
 `pscp -r -i C:\path\to\key.ppk C:\Users\path\to\gamesettings azureuser@twibes-w2mwc.centralus.cloudapp.azure.com:/home/azureuser`
 
 \
-### Command to restart the specific game servers
+### Command to start/restart the specific game servers
 
-`./taserver.sh -d gamesettings -c CookedPC`
+#### Create
+`./taserver.sh -d pugsettings -c CookedPC`
 
-`./taserver.sh -d gamesettings`
+`./taserver.sh -d arenasettings -c CookedPC -p 2`
 
-`./taserver.sh -d gamesettings -p 2` (or whatever port offset instead of 2)
+`./taserver.sh -d pugsettings -c CookedPC -p 4`
+
+#### Restart
+
+`docker restart taserver_pugsettings_0`
+`docker restart taserver_arenasettings_2`
+`docker restart taserver_pugsettings_4`
+`docker restart loginserver`
 
 \
 ### Command to see current running servers
@@ -38,15 +46,16 @@ Ignore loginserver.
 
 ### Command to create loginserver
 
-`docker run -d --cap-add NET_ADMIN -p "9000:9000/tcp" -p "9001:9001/tcp" -p "9080:9080/tcp" --name "loginserver" loginserver`
+`docker run -d --cap-add NET_ADMIN -p "9000:9000/tcp" -p "9001:9001/tcp" -p "9080:9080/tcp" -v /home/azureuser/loginserver:/data -v /home/azureuser/taserver:/app/taserver --name loginserver loginserver`
 
 Only run once. 
 
 ### Command to update loginserver loadouts
 
-`docker exec loginserver wget -O /app/taserver/common/game_items.py https://raw.githubusercontent.com/ToddButler93/taserver/loadoutChanges/common/game_items.py`
+`wget -O taserver/common/game_items.py https://raw.githubusercontent.com/ToddButler93/taserver/loadoutChanges/common/game_items.py`
 
 `docker restart loginserver`
 
+### Verify User
 
-
+`docker exec loginserver python3 taserver/getauthcode.py <user> <email>`
