@@ -81,7 +81,7 @@ local itemDefs = {
     {
         name="Nova Colt", 
         changes={
-            HoldToFire = false,
+            HoldToFire = true,
             ClipAmmo = 6,
             SpareAmmo = 72,
             LowAmmoCutoff = 1,
