@@ -14,7 +14,7 @@ ServerSettings.DisabledEquipPoints.add("Heavy", Loadouts.EquipPoints.Tertiary)
 defaultGotySettings = {
     -- Time settings
     TimeLimit = 25,
-    WarmupTime = 15,
+    WarmupTime = 5,
     RespawnTime = 5,
     SniperRespawnDelay = 0,
     EndMatchWaitTime = 15,

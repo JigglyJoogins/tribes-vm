@@ -423,8 +423,8 @@ itemChangeDefs = {
             class="Light", -- Will apply across classes
             name="Lightweight",
             valueMods={
-                --MassBuff = -0.3,
-                --RegenTimeBuff = -2.0
+                MassBuff = -0.3,
+                RegenTimeBuff = -2.0
             }
         },
         {

@@ -13,6 +13,7 @@ ServerSettings.MutuallyExclusiveItems.add("Light", "BXT1A", "Light", "Rage")
 ServerSettings.MutuallyExclusiveItems.add("Light", "Stealth Pack", "Light", "Shocklance")
 ServerSettings.MutuallyExclusiveItems.add("Light", "Stealth Pack", "Light", "Super Heavy")
 ServerSettings.MutuallyExclusiveItems.add("Light", "Stealth Pack", "Light", "Reach")
+ServerSettings.MutuallyExclusiveItems.add("Light", "Rage", "Light", "Lightweight")
 
 --ServerSettings.BannedItems.add("Light", "SAP20")
 
