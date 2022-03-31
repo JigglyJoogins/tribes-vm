@@ -87,6 +87,7 @@ local itemDefs = {
         name="Sparrow", 
         changes={
             HoldToFire = true,
+            CanZoom = true,
             Damage = 80,
             ClipAmmo = 16,
             SpareAmmo = 112,
