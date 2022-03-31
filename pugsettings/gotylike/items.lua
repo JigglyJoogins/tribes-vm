@@ -502,7 +502,7 @@ itemChangeDefs = {
             name="Safety Third",
             valueMods={
                 ExtraBeltAmmo = 1,
-                BeltDamageRadiusBuff = 0.1,
+                -- BeltDamageRadiusBuff = 0.1,
                 ExtraMines = 1,
             }
         },
