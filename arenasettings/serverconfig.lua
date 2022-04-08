@@ -89,6 +89,10 @@ ServerSettings.MapRotation.addCustom("TrCTF-Blues")
 ServerSettings.MapRotation.addCustom("TrCTF-Incidamus")
 ServerSettings.MapRotation.addCustom("TrCTF-Periculo")
 ServerSettings.MapRotation.addCustom("TrCTF-Fracture")
+ServerSettings.MapRotation.addCustom("TrCTF-Phlegethon")
+ServerSettings.MapRotation.addCustom("TrCTF-DesertedValley")
+ServerSettings.MapRotation.addCustom("TrCTF-Acheron")
+ServerSettings.MapRotation.addCustom("TrCTF-Styx")
 ]]
 -------------- Arena --------------
 ServerSettings.MapRotation.add(Maps.Arena.WalledIn)
@@ -98,6 +102,7 @@ ServerSettings.MapRotation.add(Maps.Arena.Undercroft)
 ServerSettings.MapRotation.add(Maps.Arena.AirArena)
 ServerSettings.MapRotation.add(Maps.Arena.LavaArena)
 ServerSettings.MapRotation.add(Maps.Arena.Whiteout)
+ServerSettings.MapRotation.addCustom("TrArena-ElysianBattleground")
 -------------- Rabbit --------------
 --[[
 ServerSettings.MapRotation.add(Maps.Rabbit.Nightabatic)
