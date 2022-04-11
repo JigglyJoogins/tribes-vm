@@ -68,6 +68,22 @@ then
 
 `docker restart loginserver`
 
+### Commands to alter login server on gameserver
+Just install nano until we intelligent
+
+Example
+`docker exec -it taserver_pugsettings_4 /bin/bash`
+
+`apt update`
+
+`apt install nano`
+
+`nano taserver/gamesettings/gameserverlauncher.ini`
+
+`exit`
+
+`docker restart taserver_pugsettings_4`
+
 ### Verify User
 
 `docker exec loginserver python3 taserver/getauthcode.py <user> <email>`
