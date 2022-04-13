@@ -95,8 +95,8 @@ ServerSettings.MapRotation.addCustom("TrCTF-Acheron")
 ServerSettings.MapRotation.addCustom("TrCTF-Styx")
 ]]
 -------------- Arena --------------
-ServerSettings.MapRotation.addCustom("TrArena-ElysianBattleground")
 ServerSettings.MapRotation.addCustom("TrArena-Walledin")
+ServerSettings.MapRotation.addCustom("TrArena-ElysianBattleground")
 ServerSettings.MapRotation.addCustom("TrArena-Fraytown")
 ServerSettings.MapRotation.addCustom("TrArena-Lavaarena")
 ServerSettings.MapRotation.addCustom("TrArena-Airarena")
