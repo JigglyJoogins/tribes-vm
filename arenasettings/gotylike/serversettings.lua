@@ -14,10 +14,10 @@ ServerSettings.DisabledEquipPoints.add("Heavy", Loadouts.EquipPoints.Tertiary)
 defaultGotySettings = {
     -- Time settings
     TimeLimit = 25,
-    WarmupTime = 5,
+    WarmupTime = 7,
     RespawnTime = 5,
     SniperRespawnDelay = 0,
-    EndMatchWaitTime = 15,
+    EndMatchWaitTime = 12,
     AmmoPickupLifespan = 60,
     CTFFlagTimeout = 40,
     -- Team settings
@@ -29,6 +29,7 @@ defaultGotySettings = {
     BaseAssets = false,
     -- Score
     CTFCapLimit = 7,
+    ArenaRounds = 1,
 
     -- Flag
     FlagDragLight = 0,

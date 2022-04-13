@@ -46,6 +46,7 @@ defaultGotySettings = {
     BaseAssets = false,
     -- Score
     CTFCapLimit = 7,
+    ArenaRounds = 1,
 
     -- Flag
     FlagDragLight = 0,
