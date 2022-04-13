@@ -95,14 +95,14 @@ ServerSettings.MapRotation.addCustom("TrCTF-Acheron")
 ServerSettings.MapRotation.addCustom("TrCTF-Styx")
 ]]
 -------------- Arena --------------
-ServerSettings.MapRotation.addCustom("TrArena-ElysianBattleground")
 ServerSettings.MapRotation.add(Maps.Arena.WalledIn)
-ServerSettings.MapRotation.add(Maps.Arena.Hinterland)
+ServerSettings.MapRotation.addCustom("TrArena-ElysianBattleground")
+ServerSettings.MapRotation.add(Maps.Arena.Hinterlands)
 ServerSettings.MapRotation.add(Maps.Arena.FrayTown)
 ServerSettings.MapRotation.add(Maps.Arena.Undercroft)
 ServerSettings.MapRotation.add(Maps.Arena.AirArena)
 ServerSettings.MapRotation.add(Maps.Arena.LavaArena)
-ServerSettings.MapRotation.add(Maps.Arena.Whiteout)
+ServerSettings.MapRotation.add(Maps.Arena.WhiteOut)
 -------------- Rabbit --------------
 --[[
 ServerSettings.MapRotation.add(Maps.Rabbit.Nightabatic)
