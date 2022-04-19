@@ -1,3 +1,5 @@
+[![tribes ascend, awesome pug config](https://pimp-my-readme.webapp.io/pimp-my-readme/wavy-banner?subtitle=awesome%20pug%20config&title=tribes%20ascend)](https://pimp-my-readme.webapp.io)
+
 # Tribes VM For NA Servers
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fchickenbellyfin%2Ftaserver-deploy%2Fmaster%2Fdocker%2Fazuredeploy.json)
@@ -87,5 +89,3 @@ Example
 ### Verify User
 
 `docker exec loginserver python3 taserver/getauthcode.py <user> <email>`
-
-[![tribes ascend, awesome pug config](https://pimp-my-readme.webapp.io/pimp-my-readme/wavy-banner?subtitle=awesome%20pug%20config&title=tribes%20ascend)](https://pimp-my-readme.webapp.io)
