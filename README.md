@@ -87,3 +87,5 @@ Example
 ### Verify User
 
 `docker exec loginserver python3 taserver/getauthcode.py <user> <email>`
+
+[![tribes ascend, awesome pug config](https://pimp-my-readme.webapp.io/pimp-my-readme/wavy-banner?subtitle=awesome%20pug%20config&title=tribes%20ascend)](https://pimp-my-readme.webapp.io)
