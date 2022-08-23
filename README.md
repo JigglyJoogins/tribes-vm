@@ -89,3 +89,15 @@ Example
 ### Verify User
 
 `docker exec loginserver python3 taserver/getauthcode.py <user> <email>`
+
+### Logging weird things
+
+run docker ps and make note of the name of the taserver and the loginserver
+docker container logs taserver_NNN
+docker container logs <loginserver>
+docker exec taserver_NNN cat /app/taserver/data/logs/taserver_firewall.log
+docker exec taserver_NNN iptables -L
+docker exec <loginserver> iptables -L
+
+Also if the player which got disconnected can tell us their IP address that will help a lot
+  Run these before someone reconnects
