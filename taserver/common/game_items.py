@@ -558,10 +558,8 @@ _hierarchical_definitions_goty = {
                     'Pathfinder_Primary_LightTwinfusor': 8245,
                     'Pathfinder_Primary_LightSpinfusor_MKD': 8415,
                     'Light_Primary_LightGrenadeLauncher': 8761,
-                    'Brute_Primary_HeavySpinfusor': 7448,
                 },
                 'secondary': {
-                    'Juggernaut_Primary_FusionMortar_MKD': 8400,
                     'Pathfinder_Secondary_LightAssaultRifle': 7438,
                     'Light_Sidearm_Sparrow': 7433,
                     'Pathfinder_Secondary_Shotgun': 7399,
