@@ -58,6 +58,7 @@ Admin.Roles.addMember("mod", "dust")
 Admin.Roles.addMember("admin", "unquenchable")
 Admin.Roles.addMember("mod", "soninova")
 Admin.Roles.addMember("mod", "theobaldthebird")
+Admin.Roles.addMember("mod", "frogkabobs")
 
 -------------- Map Rotation --------------
 ServerSettings.MapRotation.VotingEnabled = true
