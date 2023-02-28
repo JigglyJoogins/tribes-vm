@@ -125,6 +125,13 @@ ServerSettings.MapRotation.addCustom("TrCTF-Phlegethon")
 ServerSettings.MapRotation.addCustom("TrCTF-DesertedValley")
 ServerSettings.MapRotation.addCustom("TrCTF-Acheron")
 ServerSettings.MapRotation.addCustom("TrCTF-Styx")
+ServerSettings.MapRotation.addCustom("TrCTF-Eclipse")
+ServerSettings.MapRotation.addCustom("TrCTF-Polaris")
+ServerSettings.MapRotation.addCustom("TrCTF-Oceanus")
+ServerSettings.MapRotation.addCustom("TrCTF-Meridian")
+ServerSettings.MapRotation.addCustom("TrCTF-Ascent")
+ServerSettings.MapRotation.addCustom("TrCTF-Crash")
+ServerSettings.MapRotation.addCustom("TrCTF-TreacherousPass")
 -------------- Arena --------------
 --[[
 ServerSettings.MapRotation.addCustom("TrArena-Walledin")
