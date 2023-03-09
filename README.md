@@ -8,7 +8,7 @@ pugsettings
 
 arenasettings
 
-d2s_v4
+d2s_v5
 
 CookedPC is where the map files go.
 
@@ -32,11 +32,13 @@ taserver contains loginserver files (game_items.py)
 ### Command to start/restart the specific game servers
 
 #### Create
-`./taserver.sh -d pugsettings -c CookedPC`
+`./taserver.sh -d pugsettings -c CookedPC -e LOGINSERVER=ta.dodgesdomain.com`
 
-`./taserver.sh -d arenasettings -c CookedPC -p 2`
+`./taserver.sh -d arenasettings -c CookedPC -p 2-e LOGINSERVER=ta.dodgesdomain.com`
 
 `./taserver.sh -d pugsettings -c CookedPC -p 4`
+
+-e LOGINSERVER=ta.dodgesdomain.com sets the login server.
 
 #### Restart
 
@@ -71,6 +73,9 @@ then
 `docker restart loginserver`
 
 ### Commands to alter login server on gameserver
+
+On Start add "-e LOGINSERVER=ta.dodgesdomain.com"
+
 Just install nano until we intelligent
 
 Example
