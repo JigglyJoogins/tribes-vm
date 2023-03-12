@@ -557,6 +557,7 @@ _hierarchical_definitions_goty = {
                     'Pathfinder_Primary_LightSpinfusor_100X': 8696,
                     'Pathfinder_Primary_LightTwinfusor': 8245,
                     'Pathfinder_Primary_LightSpinfusor_MKD': 8415,
+                    'Infiltrator_Primary_StealthLightSpinfusor': 7902,
                     'Light_Primary_LightGrenadeLauncher': 8761,
                 },
                 'secondary': {
@@ -622,7 +623,6 @@ _hierarchical_definitions_goty = {
         'inf': {
             'weapons': {
                 'primary': {
-                    'Infiltrator_Primary_StealthLightSpinfusor': 7902,
                     'Infiltrator_Primary_RemoteArxBuster': 8252,
                     'Infiltrator_Primary_RhinoSMG': 7397,
                     'Infiltrator_Primary_RhinoSMG_MKD': 8409,

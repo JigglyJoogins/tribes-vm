@@ -59,9 +59,10 @@ local itemDefs = {
         name="Light Spinfusor", 
         changes={
             Damage = 550,
-            DirectHitMultiplier = 1.4,
+            DirectHitMultiplier = 1.6,
             SpareAmmo = 28,
             ReloadTime = 1.24,
+            ExplosiveRadius = 340,
         },
     },
     {
@@ -103,6 +104,16 @@ local itemDefs = {
             Damage = 650,
             DirectHitMultiplier = 1.35,
             SpareAmmo = 28,
+        },
+    },
+    {
+        name="Stealth Spinfusor",
+        changes={
+            Damage = 550,
+            DirectHitMultiplier = 1.6,
+            SpareAmmo = 28,
+            ReloadTime = 1.24,
+            ExplosiveRadius = 340,
         },
     },
     {

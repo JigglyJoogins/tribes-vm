@@ -44,14 +44,6 @@ local classDef = {
 
 local itemDefs = {
     {
-        name="Stealth Spinfusor",
-        changes={
-            Damage = 500,
-            DirectHitMultiplier = 1.4,
-            SpareAmmo = 28,
-        },
-    },
-    {
         name="Jackal",
         changes={
             Damage = 200,
