@@ -4,7 +4,7 @@
 
 -------------- SERVER INFO --------------
 
-ServerSettings.Description = "NA Mixer with Mapz"
+ServerSettings.Description = "NA Mixer with Mapz2"
 ServerSettings.Motd = "Mixer-Style Rules: No HS/chain, FF on"
 ServerSettings.GameSettingMode = ServerSettings.GameSettingModes.OOTB
 ServerSettings.TeamAssignType = TeamAssignTypes.Unbalanced
@@ -66,10 +66,10 @@ Items.setProperty("Light", "stickygrenade", Items.Properties.Damage, 1000.00)
 Items.setProperty("Light", "stickygrenade", Items.Properties.StuckDamageMultiplier, 1.0)
 
 Items.setProperty("Heavy", "saberlauncher", Items.Properties.ReloadTime, 1.5)
-Projectiles.setProperty("saberlauncherdumbfire", Projectiles.Properties.Damage, 600.00)
-Projectiles.setProperty("saberlauncherdumbfire", Projectiles.Properties.DirectHitMultiplier, 1.25)
-Projectiles.setProperty("saberlauncherdumbfire", Projectiles.Properties.ExplosiveRadius, 450.0)
-Projectiles.setProperty("saberlauncherdumbfire", Projectiles.Properties.CollisionSize, 30.0)
+--Projectiles.setProperty("saberlauncherdumbfire", Projectiles.Properties.Damage, 600.00)
+--Projectiles.setProperty("saberlauncherdumbfire", Projectiles.Properties.DirectHitMultiplier, 1.25)
+--Projectiles.setProperty("saberlauncherdumbfire", Projectiles.Properties.ExplosiveRadius, 450.0)
+--Projectiles.setProperty("saberlauncherdumbfire", Projectiles.Properties.CollisionSize, 30.0)
 
 Items.setProperty("Medium", "apgrenade", Items.Properties.Damage, 880.00)
 Items.setProperty("Medium", "apgrenade", Items.Properties.DirectHitMultiplier, 1.25)
@@ -161,9 +161,9 @@ Items.setProperty("Light", "explosivenitron", Items.Properties.ProjectileLifespa
 Items.setProperty("Heavy", "gladiator", Items.Properties.ProjectileLifespan, 12.0)
 
 Items.setProperty("Heavy", "mirvlauncher", Items.Properties.FuseTimer, 1.0)
-Projectiles.setProperty("mirvlauncher", Projectiles.Properties.MIRVSecondaryExplosions, 5)
+--Projectiles.setProperty("mirvlauncher", Projectiles.Properties.MIRVSecondaryExplosions, 5)
 
-Projectiles.setProperty("clustergrenade", Projectiles.Properties.MIRVSecondaryExplosions, 7)
+--Projectiles.setProperty("clustergrenade", Projectiles.Properties.MIRVSecondaryExplosions, 7)
 
 Items.setProperty("Light", "thrustpack", Items.Properties.ThrustPackMinVerticalImpulse, -10000000.0)
 Items.setProperty("Light", "shocklance", Items.Properties.Damage, 500.0)
@@ -285,12 +285,13 @@ local commands = {
   doSetupRoles(roles)
   
   --------------------------------------------------------------------------------
+  --Admin.Roles.addMember("admin", "chicken")
   Admin.Roles.addMember("admin", "fuck")
-  Admin.Roles.addMember("mod", "Wrightrj")
-  Admin.Roles.addMember("mod", "Dodge")
-  Admin.Roles.addMember("mod", "Gigabyte5671")
+  Admin.Roles.addMember("admin", "Wrightrj")
+  Admin.Roles.addMember("admin", "Dodge")
+  Admin.Roles.addMember("admin", "Gigabyte5671")
   Admin.Roles.addMember("mod", "frogkabobs")
-  Admin.Roles.addMember("mod", "mikesters4")
+  --Admin.Roles.addMember("mod", "schwarze")
 
 -------------- OTHER SETTINGS --------------
 
