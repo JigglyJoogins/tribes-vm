@@ -1,6 +1,9 @@
 -- TAMods-Server configuration can be placed in this file
 -- You can read about the configuration language at: https://www.tamods.org/docs/doc_srv_api_overview.html
 
+
+-------------- SERVER INFO --------------
+
 ServerSettings.Description = "NA Mixer with Mapz"
 ServerSettings.Motd = "Mixer-Style Rules: No HS/chain, FF on"
 ServerSettings.GameSettingMode = ServerSettings.GameSettingModes.OOTB
@@ -9,47 +12,18 @@ ServerSettings.AutoBalanceTeams	= false
 
 ServerSettings.Password = "baboon"
 
-require("admin")
+ServerSettings.WarmupTime = 600
+ServerSettings.FriendlyFire = true
+ServerSettings.CTFCapLimit = 7
 
--------------- ADMINISTRATION --------------
--------------- With Login (Must modify admin.lua) --------------
-local roles = {
-    -- {
-    --     name     = "admin",
-    --     password = "administrator", -- <<< Set the password!
-    --     commands = {"NextMap", "NextMapName", "StartMap", "EndMap","sm","em"},
-    --     canLua   = true, -- Admin can execute arbitrary Lua!
-    -- },
-    -- {
-    --     name     = "mod",
-    --     password = "moderator", -- <<< Set the password!
-    --     commands = {"StartMap", "EndMap","sm","em"},
-    --     canLua   = false,
-    -- },
-}
-    
-    -------------- Without Login --------------
-local loginlessRoles = {
-    {
-        name     = "admin",
-        commands = {"NextMap", "NextMapName", "StartMap", "EndMap","sm","em","help"},
-        canLua   = true,
-    },
-    {
-        name     = "mod",
-        commands = {"StartMap", "EndMap","sm","em","help"},
-        canLua   = false,
-    },
-}
-    
--- To set up admin / moderator roles, uncomment above
-doSetupRoles(roles, loginlessRoles)
+ServerSettings.ShrikeLimit = 1
+ServerSettings.BeowulfLimit = 1
 
-Admin.Roles.addMember("admin", "fuck")
-Admin.Roles.addMember("mod", "evil")
-Admin.Roles.addMember("admin", "dodge")
-Admin.Roles.addMember("mod", "dust")
-Admin.Roles.addMember("admin", "unquenchable")
+ServerSettings.MapRotation.VotingEnabled = true
+ServerSettings.MapRotation.Mode = ServerSettings.MapRotation.Modes.Sequential
+
+
+-------------- STANDARD OOTB SETTINGS --------------
 
 ServerSettings.MutuallyExclusiveItems.add("Light", "BXT1", "Light", "Thrust Pack")
 ServerSettings.MutuallyExclusiveItems.add("Light", "BXT1A", "Light", "Thrust Pack")
@@ -66,36 +40,276 @@ ServerSettings.MutuallyExclusiveItems.add("Light", "BXT1A", "Light", "Light Util
 ServerSettings.MutuallyExclusiveItems.add("Light", "Phase Rifle", "Light", "Light Utility Pack")
 ServerSettings.MutuallyExclusiveItems.add("Light", "SAP20", "Light", "Light Utility Pack")
 
+ServerSettings.BannedItems.add("Light", "Sparrow")
+ServerSettings.BannedItems.add("Light", "Phase Rifle")
+ServerSettings.BannedItems.add("Light", "BXT1 Rifle")
+ServerSettings.BannedItems.add("Light", "Shotgun")
+ServerSettings.BannedItems.add("Medium", "Eagle Pistol")
+ServerSettings.BannedItems.add("Medium", "Sawed-Off Shotgun")
+ServerSettings.BannedItems.add("Heavy", "Nova Colt")
+ServerSettings.BannedItems.add("Heavy", "Automatic Shotgun")
+ServerSettings.BannedItems.add("Light", "Falcon")
+ServerSettings.BannedItems.add("Light", "Throwing Knives")
+ServerSettings.BannedItems.add("Light", "Light Assault Rifle")
+ServerSettings.BannedItems.add("Medium", "Assault Rifle")
+ServerSettings.BannedItems.add("Medium", "NJ4")
+ServerSettings.BannedItems.add("Medium", "NJ5")
+ServerSettings.BannedItems.add("Medium", "Nova Blaster")
+ServerSettings.BannedItems.add("Medium", "Flak Cannon")
+ServerSettings.BannedItems.add("Heavy", "Chaingun")
+ServerSettings.BannedItems.add("Heavy", "X1")
+ServerSettings.BannedItems.add("Heavy", "Nova Blaster MX")
+ServerSettings.BannedItems.add("Heavy", "EFG")
+
+Items.setProperty("Light", "stickygrenade", Items.Properties.SpareAmmo, 3)
+Items.setProperty("Light", "stickygrenade", Items.Properties.Damage, 1000.00)
+Items.setProperty("Light", "stickygrenade", Items.Properties.StuckDamageMultiplier, 1.0)
+
+Items.setProperty("Heavy", "saberlauncher", Items.Properties.ReloadTime, 1.5)
+Projectiles.setProperty("saberlauncherdumbfire", Projectiles.Properties.Damage, 600.00)
+Projectiles.setProperty("saberlauncherdumbfire", Projectiles.Properties.DirectHitMultiplier, 1.25)
+Projectiles.setProperty("saberlauncherdumbfire", Projectiles.Properties.ExplosiveRadius, 450.0)
+Projectiles.setProperty("saberlauncherdumbfire", Projectiles.Properties.CollisionSize, 30.0)
+
+Items.setProperty("Medium", "apgrenade", Items.Properties.Damage, 880.00)
+Items.setProperty("Medium", "apgrenade", Items.Properties.DirectHitMultiplier, 1.25)
+Items.setProperty("Medium", "apgrenade", Items.Properties.ImpactMomentum, 110000.00)
+Items.setProperty("Medium", "apgrenade", Items.Properties.MinDamageRangeProportion, 1.0)
+Items.setProperty("Medium", "apgrenade", Items.Properties.MinDamageProportion, 0.5)
+Items.setProperty("Medium", "apgrenade", Items.Properties.ExplosiveRadius, 800.00)
+Items.setProperty("Medium", "apgrenade", Items.Properties.ExplodeOnContact, true)
+Items.setProperty("Medium", "apgrenade", Items.Properties.MustBounceBeforeExplode, false)
+
+Items.setProperty("Medium", "arxbuster", Items.Properties.ProjectileLifespan, 12.0)
+
+Items.setProperty("Light", "boltlauncher", Items.Properties.ProjectileLifespan, 12.0)
+Items.setProperty("Light", "boltlauncher", Items.Properties.Damage, 600.0)
+
+Items.setProperty("Medium", "spinfusor", Items.Properties.ProjectileLifespan, 12.0)
+
+Items.setProperty("Medium", "grenadelauncher", Items.Properties.ProjectileInheritance, 1.0)
+Items.setProperty("Medium", "grenadelauncher", Items.Properties.ProjectileLifespan, 12.0)
+
+Items.setProperty("Light", "grenadelauncher", Items.Properties.ProjectileLifespan, 12.0)
+
+Items.setProperty("Light", "T5", Items.Properties.Damage, 800.00)
+Items.setProperty("Light", "T5", Items.Properties.DirectHitMultiplier, 1.25)
+Items.setProperty("Light", "T5", Items.Properties.ImpactMomentum, 110000.00)
+Items.setProperty("Light", "T5", Items.Properties.MinDamageRangeProportion, 1.0)
+Items.setProperty("Light", "T5", Items.Properties.MinDamageProportion, 0.5)
+Items.setProperty("Light", "T5", Items.Properties.ExplosiveRadius, 800.00)
+Items.setProperty("Light", "T5", Items.Properties.ExplodeOnContact, true)
+Items.setProperty("Light", "T5", Items.Properties.MustBounceBeforeExplode, false)
+
+Items.setProperty("Heavy", "fraggrenade", Items.Properties.Damage, 960.00)
+Items.setProperty("Heavy", "fraggrenade", Items.Properties.DirectHitMultiplier, 1.25)
+Items.setProperty("Heavy", "fraggrenade", Items.Properties.ImpactMomentum, 110000.00)
+Items.setProperty("Heavy", "fraggrenade", Items.Properties.MinDamageRangeProportion, 1.0)
+Items.setProperty("Heavy", "fraggrenade", Items.Properties.MinDamageProportion, 0.5)
+Items.setProperty("Heavy", "fraggrenade", Items.Properties.ExplosiveRadius, 800.00)
+Items.setProperty("Heavy", "fraggrenade", Items.Properties.ExplodeOnContact, true)
+Items.setProperty("Heavy", "fraggrenade", Items.Properties.MustBounceBeforeExplode, false)
+--Items.setProperty("Heavy", "heavyapgrenade", Items.Properties.MustBounceBeforeExplode, true)
+
+--check if same trajectory as bolt
+Items.setProperty("Heavy", "heavyboltlauncher", Items.Properties.Damage, 800.00)
+Items.setProperty("Heavy", "heavyboltlauncher", Items.Properties.ProjectileTerminalVelocity, 7000.0)
+Items.setProperty("Heavy", "heavyboltlauncher", Items.Properties.ProjectileLifespan, 12.0)
+
+Items.setProperty("Heavy", "heavyspinfusor", Items.Properties.Damage, 800.00)
+Items.setProperty("Heavy", "heavyspinfusor", Items.Properties.ProjectileLifespan, 12.0)
+
+Items.setProperty("Heavy", "heavyblinksfusor", Items.Properties.Damage, 800.00)
+Items.setProperty("Heavy", "heavyblinksfusor", Items.Properties.ProjectileLifespan, 12.0)
+
+Items.setProperty("Medium", "twinfusor", Items.Properties.Damage, 400.00)
+Items.setProperty("Medium", "twinfusor", Items.Properties.ImpactMomentum, 85000.00)
+Items.setProperty("Medium", "twinfusor", Items.Properties.SelfImpactMomentumMultiplier, 1.0)
+Items.setProperty("Medium", "twinfusor", Items.Properties.ProjectileLifespan, 12.0)
+
+Items.setProperty("Heavy", "heavytwinfusor", Items.Properties.SelfImpactMomentumMultiplier, 1.0)
+Items.setProperty("Heavy", "heavytwinfusor", Items.Properties.Damage, 457.00)
+Items.setProperty("Heavy", "heavytwinfusor", Items.Properties.ImpactMomentum, 85000.00)
+Items.setProperty("Heavy", "heavytwinfusor", Items.Properties.ProjectileLifespan, 12.0)
+
+Items.setProperty("Medium", "honorfusor", Items.Properties.ProjectileLifespan, 12.0)
+
+Items.setProperty("Light", "lightspinfusor", Items.Properties.ProjectileLifespan, 12.0)
+
+Items.setProperty("Light", "blinksfusor", Items.Properties.ProjectileLifespan, 12.0)
+
+Items.setProperty("Light", "lighttwinfusor", Items.Properties.Damage, 333.4)
+Items.setProperty("Light", "lighttwinfusor", Items.Properties.ImpactMomentum, 85000.00)
+Items.setProperty("Light", "lighttwinfusor", Items.Properties.SelfImpactMomentumMultiplier, 1.0)
+Items.setProperty("Light", "lighttwinfusor", Items.Properties.ProjectileLifespan, 12.0)
+
+Items.setProperty("Medium", "blinksfusor", Items.Properties.ProjectileLifespan, 12.0)
+
+Items.setProperty("Medium", "thumper", Items.Properties.ProjectileLifespan, 12.0)
+Items.setProperty("Medium", "thumper", Items.Properties.ProjectileGravity, 0.4)
+Items.setProperty("Medium", "thumper", Items.Properties.ProjectileSpeed, 3820.0)
+
+--add lines for med thumper dx
+Items.setProperty("Medium", "thumperdx", Items.Properties.ExplosiveRadius, 400)
+Items.setProperty("Medium", "thumperdx", Items.Properties.MinDamageProportion, 0.3)
+Items.setProperty("Medium", "thumperdx", Items.Properties.MinDamageRangeProportion, 1.0)
+
+Items.setProperty("Light", "chaffgrenades", Items.Properties.SpareAmmo, 4)
+
+Items.setProperty("Light", "explosivenitron", Items.Properties.ProjectileLifespan, 12.0)
+
+Items.setProperty("Heavy", "gladiator", Items.Properties.ProjectileLifespan, 12.0)
+
+Items.setProperty("Heavy", "mirvlauncher", Items.Properties.FuseTimer, 1.0)
+Projectiles.setProperty("mirvlauncher", Projectiles.Properties.MIRVSecondaryExplosions, 5)
+
+Projectiles.setProperty("clustergrenade", Projectiles.Properties.MIRVSecondaryExplosions, 7)
+
+Items.setProperty("Light", "thrustpack", Items.Properties.ThrustPackMinVerticalImpulse, -10000000.0)
+Items.setProperty("Light", "shocklance", Items.Properties.Damage, 500.0)
+
+Vehicles.setProperty("Grav Cycle", Vehicles.Properties.MaxCrashDamage, 0.00)
+Vehicles.setProperty("Grav Cycle", Vehicles.Properties.MinCrashDamage, 0.00)
+Vehicles.setProperty("Grav Cycle", Vehicles.Properties.HealthPool, 2800.0)
+VehicleWeapons.setProperty("Beowulf Cannon", VehicleWeapons.Properties.DirectHitMultiplier, 1.30)
+VehicleWeapons.setProperty("Beowulf Chaingun", VehicleWeapons.Properties.SpareAmmo, 0)
+VehicleWeapons.setProperty("Beowulf Chaingun", VehicleWeapons.Properties.ClipAmmo, 0)
+VehicleWeapons.setProperty("Beowulf Chaingun", VehicleWeapons.Properties.Damage, 0.00)
+Classes.setValueMods("Medium", {
+  {ValueMods.JammerPackRadiusBuff, 2.00},
+  {ValueMods.QuickDraw, 0.50},
+  {ValueMods.QuickDrawBelt, 0.50},
+  {ValueMods.SensorDetectionReduction, 0.50},
+  {ValueMods.AcquisitionTimeByEnemyTurretsBuff, 2.00},
+  {ValueMods.SurvivalistHealth, 0.266667},
+  {ValueMods.VehicleEnergyBuff, 0.25},
+  {ValueMods.SurvivalistEnergy, 0.20},
+  {ValueMods.SelfDamageReduction, 0.20},
+})
+
+
+
+--Projectiles.setProperty("explosivenitron", Projectiles.Properties.ImpactMomentum, 10000000.00)
+--Projectiles.setProperty("mirvlauncher", Projectiles.Properties.MIRVSecondaryProjectile, 86699)
+--Projectiles.setProperty("mirvlauncher", Projectiles.Properties.MIRVSecondaryExplosions, 20)
+--Projectiles.setProperty("gladiator", Projectiles.Properties.GladiatorTertiaryProjectile, 86209)
+--Projectiles.setProperty("blinks", Projectiles.Properties.ProjectileBounce, true)
+--Projectiles.setProperty("lightspinfusor", Projectiles.Properties.Damage, -400)
+--Projectiles.setProperty("lightspinfusor", Projectiles.Properties.ImpactMomentum, -100000)
+--Projectiles.setProperty("flaregrenade", Projectiles.Properties.Damage, 400)
+--Projectiles.setProperty("flaregrenade", Projectiles.Properties.ExplosiveRadius, 400)
+--Items.setProperty("Light", "light assault rifle", Items.Properties.DeviceProjectile, 86807)
+--Items.setProperty("Medium", "flak", Items.Properties.DeviceProjectile, 85203)
+--Projectiles.setProperty("baseturret", Projectiles.Properties.ImpactMomentum, 10000000.00)
+--Projectiles.setProperty("trackingmissile_dumbfire", Projectiles.Properties.ImpactMomentum, 10000000.00)
+--Items.setProperty("Light", "Bolt Launcher", Items.Properties.DeviceProjectile, 86209)
+--Items.setProperty("Light", "Bolt Launcher", Items.Properties.CanZoom, true)
+-------------- ADMINISTRATION --------------
+
+-- Basic Access Control, see https://www.tamods.org/docs/doc_srv_api_admin.html for more
+
+require("admin")
+
+local commands = {
+    {
+        name      = "NextMap",
+        arguments = {
+            {"MapId", Admin.Command.ArgumentType.Int},
+        },
+        func      = function (player, role, MapId)
+            if Admin.Game.NextMap(MapId) then
+                Admin.SendConsoleMessageToAllPlayers(player .. " set next map id to " .. MapId)
+            else
+                Admin.SendConsoleMessageToPlayer(player, "Failed to set next map to " .. MapId)
+            end
+  
+        end,
+    },
+    {
+        name      = "NextMapName",
+        arguments = {
+            {"MapName", Admin.Command.ArgumentType.String},
+        },
+        func      = function (player, role, MapName)
+            if Admin.Game.NextMapByFilename(MapName) then
+                Admin.SendConsoleMessageToAllPlayers(player .. " set next map name to " .. MapId)
+            else
+                Admin.SendConsoleMessageToPlayer(player, "Failed to set next map to " .. MapName)
+            end
+  
+        end,
+    },
+    {
+        name      = "StartMap",
+        arguments = {},
+        func      = function (player, role)
+            Admin.Game.StartMap()
+            Admin.SendConsoleMessageToAllPlayers("Map started by " .. player)
+        end,
+    },
+    {
+        name      = "EndMap",
+        arguments = {},
+        func      = function (player, role)
+            Admin.Game.EndMap()
+            Admin.SendConsoleMessageToAllPlayers("Map ended by " .. player)
+        end,
+    },
+  }
+  
+  function doSetupRoles(roles)
+    for cmdIdx, command in pairs(commands) do
+        Admin.Command.define(command.name, command.arguments, command.func)
+    end
+  
+    for roleIdx, role in pairs(roles) do
+        Admin.Roles.addLoginlessRole(role.name, role.canLua)
+        for cmdIdx, cmdName in pairs(role.commands) do
+            Admin.Roles.addAllowedCommand(role.name, cmdName)
+        end
+    end
+  end
+  
+  local roles = {
+      {
+          name     = "admin",
+          commands = {"NextMap", "NextMapName", "StartMap", "EndMap"},
+          canLua   = true,
+      },
+      {
+          name     = "mod",
+          commands = {"NextMap", "NextMapName", "StartMap", "EndMap"},
+          canLua   = false,
+      },
+    }
+  doSetupRoles(roles)
+  
+  --------------------------------------------------------------------------------
+  Admin.Roles.addMember("admin", "fuck")
+  Admin.Roles.addMember("mod", "Wrightrj")
+  Admin.Roles.addMember("mod", "Dodge")
+  Admin.Roles.addMember("mod", "Gigabyte5671")
+  Admin.Roles.addMember("mod", "frogkabobs")
+  Admin.Roles.addMember("mod", "mikesters4")
+
+-------------- OTHER SETTINGS --------------
+
 -- Some other settings you might need, just uncomment those lines
 -- If you need more settings, check the documentation at : https://www.tamods.org/docs/doc_srv_api_serverconfig.html
 
-ServerSettings.WarmupTime = 600
-ServerSettings.FriendlyFire = true
-ServerSettings.CTFCapLimit = 7
+-- ServerSettings.WarmupTime = 60
+-- ServerSettings.FriendlyFire = true
+-- ServerSettings.CTFCapLimit = 7
+-- ServerSettings.BannedItems.add("Light", "BXT1")
 
-ServerSettings.ShrikeLimit = 1
-ServerSettings.BeowulfLimit = 0
 
--- Heavy can 1-shot a light with spinfusor. 800 * 1.25 DirectHitMultiplier = 1000
--- Classes.setProperty("Light", Classes.Properties.HealthPool, 1000) (default)
-Items.setProperty("Heavy", "Heavy Spinfusor", Items.Properties.Damage, 800)
-Items.setProperty("Heavy", "Heavy Blinksfusor", Items.Properties.Damage, 800)
-Items.setProperty("Heavy", "Heavy Bolt Launcher", Items.Properties.Damage, 800)
+-------------- MAP ROTATION --------------
 
--- Bolt Launcher does 750 damage. 600 * 1.25 DirectHitMultiplier = 750
-Items.setProperty("Light", "Bolt Launcher", Items.Properties.Damage, 600)
+-- The default map rotation is: Katabatic, ArxNovena, DangerousCrossing, Crossfire, Drydock, Terminus, Sunstar
+-- You can override the default map rotation by uncommenting any of the maps below.
 
--- Shocklance now does 500 damage, 1000 on backlance. 
-Items.setProperty("Light", "Shocklance", Items.Properties.Damage, 500)
-
-Classes.setProperty("Medium", Classes.Properties.EnergyPool, 110)
--- this settings does not work
-ServerSettings.HeavyCountLimit = 3
-
--------------- Map Rotation --------------
-ServerSettings.MapRotation.VotingEnabled = true
-ServerSettings.MapRotation.Mode = ServerSettings.MapRotation.Modes.Sequential -- Can be set to ServerSettings.MapRotation.Modes.Random for random map rotation.
--------------- Capture the Flag --------------
+-- ServerSettings.MapRotation.VotingEnabled = true
+-- ServerSettings.EndMatchWaitTime = 5
 ServerSettings.MapRotation.add(Maps.CTF.Katabatic)
 ServerSettings.MapRotation.add(Maps.CTF.ArxNovena)
 ServerSettings.MapRotation.add(Maps.CTF.DangerousCrossing)
@@ -132,77 +346,3 @@ ServerSettings.MapRotation.addCustom("TrCTF-Meridian")
 ServerSettings.MapRotation.addCustom("TrCTF-Ascent")
 ServerSettings.MapRotation.addCustom("TrCTF-Crash")
 ServerSettings.MapRotation.addCustom("TrCTF-TreacherousPass")
--------------- Arena --------------
---[[
-ServerSettings.MapRotation.addCustom("TrArena-Walledin")
-ServerSettings.MapRotation.addCustom("TrArena-ElysianBattleground")
-ServerSettings.MapRotation.addCustom("TrArena-Fraytown")
-ServerSettings.MapRotation.addCustom("TrArena-Lavaarena")
-ServerSettings.MapRotation.addCustom("TrArena-Airarena")
-ServerSettings.MapRotation.addCustom("TrArena-Whiteout")
-ServerSettings.MapRotation.addCustom("TrArena-Undercroft")
-ServerSettings.MapRotation.addCustom("TrArena-Hinterland")
-]]
--------------- Rabbit --------------
---[[
-ServerSettings.MapRotation.add(Maps.Rabbit.Nightabatic)
-ServerSettings.MapRotation.add(Maps.Rabbit.SulfurCove)
-ServerSettings.MapRotation.add(Maps.Rabbit.Inferno)
-ServerSettings.MapRotation.add(Maps.Rabbit.Crossfire)
-ServerSettings.MapRotation.add(Maps.Rabbit.Outskirts)
-ServerSettings.MapRotation.add(Maps.Rabbit.Quicksand)
-]]
--------------- Team Death Match --------------
---[[
-ServerSettings.MapRotation.add(Maps.TDM.Outskirts)
-ServerSettings.MapRotation.add(Maps.TDM.Quicksand)
-ServerSettings.MapRotation.add(Maps.TDM.SulfurCove)
-ServerSettings.MapRotation.add(Maps.TDM.DrydockNight)
-ServerSettings.MapRotation.add(Maps.TDM.Nightabatic)
-ServerSettings.MapRotation.add(Maps.TDM.Inferno)
-ServerSettings.MapRotation.add(Maps.TDM.Miasma)
-]]
--------------- CTF Blitz --------------
---[[
-ServerSettings.MapRotation.add(Maps.Blitz.ArxNovena)
-ServerSettings.MapRotation.add(Maps.Blitz.BellaOmega)
-ServerSettings.MapRotation.add(Maps.Blitz.Blueshift)
-ServerSettings.MapRotation.add(Maps.Blitz.Crossfire)
-ServerSettings.MapRotation.add(Maps.Blitz.CanyonCrusadeRevival)
-ServerSettings.MapRotation.add(Maps.Blitz.Drydock)
-ServerSettings.MapRotation.add(Maps.Blitz.Hellfire)
-ServerSettings.MapRotation.add(Maps.Blitz.IceCoaster)
-ServerSettings.MapRotation.add(Maps.Blitz.Katabatic)
-ServerSettings.MapRotation.add(Maps.Blitz.Perdition)
-ServerSettings.MapRotation.add(Maps.Blitz.Terminus)
-]]
--------------- Capture and Hold --------------
---[[
-ServerSettings.MapRotation.add(Maps.CaH.Outskirts)
-ServerSettings.MapRotation.add(Maps.CaH.Katabatic)
-ServerSettings.MapRotation.add(Maps.CaH.Raindance)
-ServerSettings.MapRotation.add(Maps.CaH.SulfurCove)
-ServerSettings.MapRotation.add(Maps.CaH.Tartarus)
-ServerSettings.MapRotation.add(Maps.CaH.CanyonCrusadeRevival)
-]]
-
-ServerSettings.BannedItems.add("Light", "Sparrow")
-ServerSettings.BannedItems.add("Light", "Phase Rifle")
-ServerSettings.BannedItems.add("Light", "BXT1 Rifle")
-ServerSettings.BannedItems.add("Light", "Falcon")
-ServerSettings.BannedItems.add("Light", "Light Assault Rifle")
-ServerSettings.BannedItems.add("Light", "Throwing Knives")
-ServerSettings.BannedItems.add("Light", "Shotgun")
-
-ServerSettings.BannedItems.add("Medium", "Assault Rifle")
-ServerSettings.BannedItems.add("Medium", "Nova Blaster")
-ServerSettings.BannedItems.add("Medium", "NJ4 SMG")
-ServerSettings.BannedItems.add("Medium", "Eagle Pistol")
-ServerSettings.BannedItems.add("Medium", "NJ5-B SMG")
-ServerSettings.BannedItems.add("Medium", "Sawed-Off Shotgun")
-
-ServerSettings.BannedItems.add("Heavy", "Chain Gun")
-ServerSettings.BannedItems.add("Heavy", "Nova Colt")
-ServerSettings.BannedItems.add("Heavy", "X1 LMG")
-ServerSettings.BannedItems.add("Heavy", "Nova Blaster MX")
-ServerSettings.BannedItems.add("Heavy", "Automatic Shotgun")
