@@ -4,7 +4,7 @@
 
 -------------- SERVER INFO --------------
 
-ServerSettings.Description = "NA Mixer with Mapz2"
+ServerSettings.Description = "NA Mixer [jagle style]"
 ServerSettings.Motd = "Mixer-Style Rules: No HS/chain, FF on"
 ServerSettings.GameSettingMode = ServerSettings.GameSettingModes.OOTB
 ServerSettings.TeamAssignType = TeamAssignTypes.Unbalanced
