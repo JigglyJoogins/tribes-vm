@@ -160,7 +160,7 @@ Items.setProperty("Light", "explosivenitron", Items.Properties.ProjectileLifespa
 
 Items.setProperty("Heavy", "gladiator", Items.Properties.ProjectileLifespan, 12.0)
 
-Items.setProperty("Heavy", "mirvlauncher", Items.Properties.FuseTimer, 1.0)
+Items.setProperty("Heavy", "mirvlauncher", Items.Properties.FuseTimer, 1.5)
 --Projectiles.setProperty("mirvlauncher", Projectiles.Properties.MIRVSecondaryExplosions, 5)
 
 --Projectiles.setProperty("clustergrenade", Projectiles.Properties.MIRVSecondaryExplosions, 7)
@@ -187,7 +187,13 @@ Classes.setValueMods("Medium", {
   {ValueMods.SelfDamageReduction, 0.20},
 })
 
-
+--Adds Call-ins
+ServerSettings.EnableInventoryCallIn = true
+ServerSettings.InventoryStationsRestoreEnergy = true
+ServerSettings.InventoryCallInBlocksPlayers = false
+ServerSettings.InventoryCallInCost = 2000
+ServerSettings.InventoryCallInBuildUpTime = 2.0
+ServerSettings.InventoryCallInCooldownTime = 30.0
 
 --Projectiles.setProperty("explosivenitron", Projectiles.Properties.ImpactMomentum, 10000000.00)
 --Projectiles.setProperty("mirvlauncher", Projectiles.Properties.MIRVSecondaryProjectile, 86699)
