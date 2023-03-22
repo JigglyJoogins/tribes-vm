@@ -419,6 +419,7 @@ _hierarchical_definitions_ootb = {
                 'short_range': {
                     'Technician_Secondary_SawedOff': 7427,
                     'Technician_Primary_TC24': 8699,  # Repurposed as Flak Cannon
+                    'All_H1_Shocklance': 7435,
                 },
             },
             'belt': {
@@ -472,6 +473,7 @@ _hierarchical_definitions_ootb = {
                 'short_range': {
                     'Brute_Secondary_AutoShotgun': 7449,
                     'Elf_FlakCannon': 8766,
+                    'All_H1_Shocklance': 7435,
                 },
             },
             'belt': {
