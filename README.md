@@ -109,5 +109,9 @@ run `docker ps` and make note of the name of the taserver and the loginserver
 
 `docker exec <loginserver> iptables -L`
 
+Log things live
+
+`docker logs -f --tail 1 loginserver`
+
 Also if the player which got disconnected can tell us their IP address that will help a lot
   Run these before someone reconnects
