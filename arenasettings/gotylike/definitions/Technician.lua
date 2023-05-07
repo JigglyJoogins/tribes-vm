@@ -34,11 +34,20 @@ local classDef = {
     },
     armorValueMods={
         -- Technician Armor Upgrades
+        -- RegenTimeBuff = 0.25,
+        -- HealthBuff = 100,
+        -- HealthRegenRateBuff = 0.25,
+        -- EnergyBuff = 10,
+        ExtraDeployables = 1,
+        -- Soldier Armor Upgrades
         RegenTimeBuff = 0.25,
         HealthBuff = 100,
         HealthRegenRateBuff = 0.25,
-        EnergyBuff = 10,
-        ExtraDeployables = 1,
+        EnergyBuff = 5,
+        EnergyBuff = 20,
+        ExtraBeltAmmo = 1,
+        HealthBuff = 100,
+        WalkSpeedBuff = 0.1,
     },
 }
 
@@ -46,16 +55,17 @@ local itemDefs = {
     {
         name="Thumper", 
         changes={
-            Damage = 650,
-            ExplosiveRadius = 360,
+            Damage = 600,
+            ExplosiveRadius = 350,
             DirectHitMultiplier = 1.4,
-            SpareAmmo = 35,
+            SpareAmmo = 20,
+            SelfImpactExtraZMomentum = 70000,
         },
     },
     {
         name="TCN4", 
         changes={
-            Damage = 80,
+            -- Damage = 80,
             ClipAmmo = 32,
             SpareAmmo = 336,
             ReloadTime = 1.53,
