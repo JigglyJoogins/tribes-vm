@@ -9,6 +9,7 @@ rm tribvm.zip
 rm -r arenasettings
 rm -r mixersettings
 rm -r pugsettings
+rm -r ootgarenasettings
 rm -r taserver
 
 rm -r launchservers.sh
