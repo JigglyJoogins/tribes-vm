@@ -58,7 +58,7 @@ local itemDefs = {
     {
         name="Light Spinfusor", 
         changes={
-            Damage = 550,
+            --Damage = 550,
             DirectHitMultiplier = 1.4,
             SpareAmmo = 28,
             ReloadTime = 1.24,

@@ -21,7 +21,11 @@ Projectiles.setProperty("mirvlauncher", Projectiles.Properties.MIRVSecondaryExpl
 
 Projectiles.setProperty("clustergrenade", Projectiles.Properties.MIRVSecondaryExplosions, 17)
 
-Projectiles.setProperty("lightspinfusor", Projectiles.Properties.Damage, -400)
+Items.setProperty("medium", "longrangerepairtool", Items.Properties.PawnRepairPercentage, 0.06)
+-- Projectiles.setProperty("Short-Fuse Frag Grenades", Projectiles.Properties.Damage, -1000)
+Projectiles.setProperty("TCN4 Rockwind", Projectiles.Properties.Damage, -1000)
+Projectiles.setProperty("Twinfusor", Projectiles.Properties.Damage, -1000)
+Projectiles.setProperty("lightspinfusor", Projectiles.Properties.Damage, -550)
 -------------- ADMINISTRATION --------------
 -------------- With Login (Must modify admin.lua) --------------
 local roles = {
