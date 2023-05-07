@@ -66,7 +66,6 @@ local itemDefs = {
     {
         name="Twinfusor", 
         changes={
-            Damage = 410,
             ExplosiveRadius = 360,
             DirectHitMultiplier = 1.4,
             SpareAmmo = 36,
@@ -97,8 +96,7 @@ local itemDefs = {
     {
         name="Thumper D", 
         changes={
-            Damage = 550,
-            ExplosiveRadius = 370,
+            ExplosiveRadius = 350,
             DirectHitMultiplier = 1.4,
             SpareAmmo = 20,
             SelfImpactExtraZMomentum = 70000,
@@ -150,7 +148,6 @@ local itemDefs = {
     {
         name="Short-Fuse Frag Grenades", 
         changes={
-            Damage = 720,
             ExplosiveRadius = 550,
             SpareAmmo = 2,
         },
