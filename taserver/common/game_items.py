@@ -408,7 +408,6 @@ _hierarchical_definitions_ootb = {
                     'Technician_Primary_Thumper': 7461,
                     'Soldier_Secondary_ThumperD': 7462,
                     'Soldier_Secondary_ThumperD_MKD': 8417,
-                    'Soldier_Primary_Honorfusor': 8768,
                     'Soldier_Primary_Twinfusor': 8257,
                     'Soldier_Primary_Spinfusor_100X': 8697,
                     'Soldier_Secondary_SpareSpinfusor': 8697,
