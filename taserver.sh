@@ -6,13 +6,14 @@
 set -eux
 
 mount_cookedPC=""
+mount_dll=""
 mount_gamesettings=""
 login_server=""
 portoffset="0"
 pathname=""
 detach_option="-d --restart unless-stopped"
 
-while getopts d:q:c:p:f flag
+while getopts d:g:q:c:p:f flag
 do
   case "$flag" in
     d) 
@@ -22,6 +23,10 @@ do
       mkdir -p $abspath
       # docker flag to mount config dir to /gamesettings in the container
       mount_gamesettings="-v ${abspath}:/gamesettings"
+      ;;
+    g)
+      abspath=$(realpath ${OPTARG})
+      mount_dll="-v ${abspath}:/app/taserver/TAMods-Server.dll"
       ;;
     p)
       portoffset="${OPTARG}"
@@ -62,6 +67,7 @@ docker run \
   --name "$container_name" \
   $detach_option \
   $mount_gamesettings \
+  $mount_dll \
   $mount_cookedPC \
   $login_server \
   --cap-add NET_ADMIN \

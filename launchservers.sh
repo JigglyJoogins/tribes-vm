@@ -23,7 +23,7 @@ do
             ;;
         "OOTBGOTY Arena Server")
             echo "Starting OOTBGOTY Arena Server!"
-            ./taserver.sh -d ootgarenasettings -p 6 -q "ta.dodgesdomain.com"
+            ./taserver.sh -d ootgarenasettings -p 6 -q "ta.dodgesdomain.com" -g "TAMods-Server.dll"
             break
             ;;
         "All Servers")
