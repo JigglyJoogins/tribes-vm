@@ -17,11 +17,6 @@ ServerSettings.Motd = "oh dear this might be less? scuffed"
 ServerSettings.Password = ""
 ServerSettings.GameSettingMode = ServerSettings.GameSettingModes.GOTY
 
-Projectiles.setProperty("mirvlauncher", Projectiles.Properties.MIRVSecondaryExplosions, 15)
-
-Projectiles.setProperty("clustergrenade", Projectiles.Properties.MIRVSecondaryExplosions, 17)
-
-Projectiles.setProperty("lightspinfusor", Projectiles.Properties.Damage, -400)
 -------------- ADMINISTRATION --------------
 -------------- With Login (Must modify admin.lua) --------------
 local roles = {
