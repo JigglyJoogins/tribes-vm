@@ -216,88 +216,49 @@ ServerSettings.InventoryCallInCooldownTime = 30.0
 
 require("admin")
 
-local commands = {
-    {
-        name      = "NextMap",
-        arguments = {
-            {"MapId", Admin.Command.ArgumentType.Int},
-        },
-        func      = function (player, role, MapId)
-            if Admin.Game.NextMap(MapId) then
-                Admin.SendConsoleMessageToAllPlayers(player .. " set next map id to " .. MapId)
-            else
-                Admin.SendConsoleMessageToPlayer(player, "Failed to set next map to " .. MapId)
-            end
   
-        end,
+-------------- ADMINISTRATION --------------
+-------------- With Login (Must modify admin.lua) --------------
+local roles = {
+    -- {
+    --     name     = "admin",
+    --     password = "administrator", -- <<< Set the password!
+    --     commands = {"NextMap", "NextMapName", "StartMap", "EndMap","sm","em"},
+    --     canLua   = true, -- Admin can execute arbitrary Lua!
+    -- },
+    -- {
+    --     name     = "mod",
+    --     password = "moderator", -- <<< Set the password!
+    --     commands = {"StartMap", "EndMap","sm","em"},
+    --     canLua   = false,
+    -- },
+}
+    
+    -------------- Without Login --------------
+local loginlessRoles = {
+    {
+        name     = "admin",
+        commands = {"NextMap", "NextMapName", "StartMap", "EndMap","sm","em","help"},
+        canLua   = true,
     },
     {
-        name      = "NextMapName",
-        arguments = {
-            {"MapName", Admin.Command.ArgumentType.String},
-        },
-        func      = function (player, role, MapName)
-            if Admin.Game.NextMapByFilename(MapName) then
-                Admin.SendConsoleMessageToAllPlayers(player .. " set next map name to " .. MapId)
-            else
-                Admin.SendConsoleMessageToPlayer(player, "Failed to set next map to " .. MapName)
-            end
-  
-        end,
+        name     = "mod",
+        commands = {"StartMap", "EndMap","sm","em","help"},
+        canLua   = false,
     },
-    {
-        name      = "StartMap",
-        arguments = {},
-        func      = function (player, role)
-            Admin.Game.StartMap()
-            Admin.SendConsoleMessageToAllPlayers("Map started by " .. player)
-        end,
-    },
-    {
-        name      = "EndMap",
-        arguments = {},
-        func      = function (player, role)
-            Admin.Game.EndMap()
-            Admin.SendConsoleMessageToAllPlayers("Map ended by " .. player)
-        end,
-    },
-  }
-  
-  function doSetupRoles(roles)
-    for cmdIdx, command in pairs(commands) do
-        Admin.Command.define(command.name, command.arguments, command.func)
-    end
-  
-    for roleIdx, role in pairs(roles) do
-        Admin.Roles.addLoginlessRole(role.name, role.canLua)
-        for cmdIdx, cmdName in pairs(role.commands) do
-            Admin.Roles.addAllowedCommand(role.name, cmdName)
-        end
-    end
-  end
-  
-  local roles = {
-      {
-          name     = "admin",
-          commands = {"NextMap", "NextMapName", "StartMap", "EndMap"},
-          canLua   = true,
-      },
-      {
-          name     = "mod",
-          commands = {"NextMap", "NextMapName", "StartMap", "EndMap"},
-          canLua   = false,
-      },
-    }
-  doSetupRoles(roles)
-  
-  --------------------------------------------------------------------------------
-  --Admin.Roles.addMember("admin", "chicken")
-  Admin.Roles.addMember("admin", "fuck")
-  Admin.Roles.addMember("admin", "Wrightrj")
-  Admin.Roles.addMember("admin", "Dodge")
-  Admin.Roles.addMember("admin", "Gigabyte5671")
-  Admin.Roles.addMember("mod", "frogkabobs")
-  --Admin.Roles.addMember("mod", "schwarze")
+}
+    
+-- To set up admin / moderator roles, uncomment above
+doSetupRoles(roles, loginlessRoles)
+
+--------------------------------------------------------------------------------
+--Admin.Roles.addMember("admin", "chicken")
+Admin.Roles.addMember("admin", "fuck")
+Admin.Roles.addMember("admin", "Wrightrj")
+Admin.Roles.addMember("admin", "Dodge")
+Admin.Roles.addMember("admin", "Gigabyte5671")
+Admin.Roles.addMember("mod", "frogkabobs")
+--Admin.Roles.addMember("mod", "schwarze")
 
 -------------- OTHER SETTINGS --------------
 
