@@ -55,6 +55,9 @@ Admin.Roles.addMember("admin", "fuck")
 Admin.Roles.addMember("mod", "evil")
 Admin.Roles.addMember("admin", "dodge")
 Admin.Roles.addMember("mod", "dust")
+Admin.Roles.addMember("mod", "songsteal")
+Admin.Roles.addMember("mod", "aloaf")
+Admin.Roles.addMember("mod", "cringe")
 Admin.Roles.addMember("admin", "unquenchable")
 
 -------------- Map Rotation --------------

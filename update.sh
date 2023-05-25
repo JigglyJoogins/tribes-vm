@@ -8,8 +8,10 @@ chmod +x tribes-vm-main/update.sh
 rm tribvm.zip
 rm -r arenasettings
 rm -r mixersettings
+rm -r mixertestsettings
 rm -r pugsettings
 rm -r ootgarenasettings
+rm -r 2v2settings
 rm -r taserver
 
 rm -r launchservers.sh
