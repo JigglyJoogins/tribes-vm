@@ -12,9 +12,9 @@ Logger.debug("----- GOTYLike Preset Applied -----")
 -------------- SERVER INFO --------------
 
 -- Server Information
-ServerSettings.Description = "NA 2v2"
+ServerSettings.Description = "[Lowrez] NA 2v2"
 ServerSettings.Motd = ""
-ServerSettings.Password = ""
+ServerSettings.Password = "baboon"
 ServerSettings.GameSettingMode = ServerSettings.GameSettingModes.GOTY
 
 -------------- ADMINISTRATION --------------
