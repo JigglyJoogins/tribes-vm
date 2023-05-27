@@ -38,7 +38,7 @@ do
             ;;
         "Mixer Testing Server")
             echo "Starting Mixer Testing Server!"
-            ./taserver.sh -d mixersettings -p 12 -q "ta.dodgesdomain.com" # -g "TAMods-Server.dll"
+            ./taserver.sh -d mixertestsettings -p 12 -q "ta.dodgesdomain.com" # -g "TAMods-Server.dll"
             break
             ;;
         "Exit Script")
