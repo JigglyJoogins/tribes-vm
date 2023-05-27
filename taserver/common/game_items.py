@@ -461,9 +461,9 @@ _hierarchical_definitions_ootb = {
                 'Technician_Belt_TCNG': 7736,
                 'Technician_Belt_TCNG_MKD': 8416,
                 'Technician_Belt_RepairKit': 8698,
-                # 'Soldier_Belt_FlareGrenade': 7389, # NEEDS TESTING
+                'Soldier_Belt_FlareGrenade': 7389, # NEEDS TESTING
                 # 'Soldier_Belt_HeavyImpactNitron': 7450, # NEEDS TESTING
-                # 'Soldier_Belt_Grenade_MKD': 8393, # NEEDS TESTING
+                'Soldier_Belt_Grenade_MKD': 8393, # NEEDS TESTING
                 # 'Soldier_Belt_ImpactBomblets': 8244, # NEEDS TESTING
                 # 'Soldier_Belt_TargetingBeacon': 8358, # NEEDS TESTING
                 # 'Soldier_Belt_AVMine': 102003, # NEEDS TESTING
@@ -478,7 +478,7 @@ _hierarchical_definitions_ootb = {
                 'Sentinel_Pack_DropJammer': 7456,  # Repurposed
                 # 'Soldier_Pack_DamagePack': 7823, # NEEDS TESTING
                 # 'Soldier_Pack_HighSpeedStealth': 8243, # NEEDS TESTING
-                # 'Soldier_Pack_PersonalForceFieldDeployable': 7460, # NEEDS TESTING
+                'Soldier_Pack_PersonalForceFieldDeployable': 7460, # NEEDS TESTING
                 # 'Soldier_Pack_WallTurretDeployable': 7445, # NEEDS TESTING
             },
             'skins': {
