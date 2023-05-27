@@ -2,6 +2,20 @@
 
 # Tribes VM For NA Servers
 
+[Useful Commands](/docs/UsefulCommands.md)
+
+[Adding new Configurations](/docs/AddingConfigs.md)
+
+[Dodge's Guide](https://www.dodgesdomain.com/docs/servers/guide-hosting)
+
+Things to do:
+
+- [ ] Ability to set map like `setmap2v2.sh` for any running game container & for any game mode.
+- [ ] Get `TAMods-Server.dll` mounting with `-g` working on taserver.sh script.
+- [ ] Check why azure deploy errors out.
+- [ ] Pulled images are outdated, should use `chickenbellyfin/taserver:latest-maps` and `docker rm` old images.
+- [ ] Clean this README.md
+
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fchickenbellyfin%2Ftaserver-deploy%2Fmaster%2Fdocker%2Fazuredeploy.json)
 
 pugsettings
