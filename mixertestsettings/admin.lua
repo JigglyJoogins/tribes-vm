@@ -73,6 +73,17 @@ local commands = {
             Admin.SendConsoleMessageToPlayer(player, "Use '/srvcmd em' to end the map.")
         end,
     },
+    {
+        name      = "DumpValueMods",
+        arguments = {
+            {"Class", Admin.Command.ArgumentType.String},
+            {"Item", Admin.Command.ArgumentType.String},
+        },
+        func      = function (player, role, Class, Item)
+            Admin.SendConsoleMessageToAllPlayers(player .. " might be break the server!")
+            Admin.SendConsoleMessageToPlayer(player, Class .. " " .. Item .. " : " .. dump(Items.getValueMods(Class, Item)))
+        end,
+    },
 }
 
 function doSetupRoles(roles)
@@ -112,3 +123,16 @@ function doSetupRoles(roles, loginlessRoles)
         end
     end
 end
+
+function dump(o)
+    if type(o) == 'table' then
+       local s = '{ '
+       for k,v in pairs(o) do
+          if type(k) ~= 'number' then k = '"'..k..'"' end
+          s = s .. '['..k..'] = ' .. dump(v) .. ','
+       end
+       return s .. '} '
+    else
+       return tostring(o)
+    end
+ end
