@@ -384,6 +384,7 @@ _hierarchical_definitions_ootb = {
                 'Infiltrator_Belt_NinjaSmoke': 8248,
                 'Pathfinder_Belt_ImpactNitron_MKD': 8396,
                 'Sentinel_Belt_ArmoredClaymore': 8240,
+                'Pathfinder_Belt_HeavyImpactNitron': 7450,
             },
             'packs': {
                 'Pathfinder_Pack_JumpPack': 7822,
@@ -406,7 +407,7 @@ _hierarchical_definitions_ootb = {
                 'impact': {
                     'Soldier_Primary_Spinfusor': 7401,
                     'Technician_Primary_Thumper': 7461,
-                    'Soldier_Secondary_ThumperD': 7462,
+                    'Juggernaut_Secondary_SpinfusorD_MKD': 8413,
                     'Soldier_Secondary_ThumperD_MKD': 8417,
                     'Soldier_Primary_Twinfusor': 8257,
                     'Soldier_Primary_Spinfusor_100X': 8697,
@@ -429,6 +430,7 @@ _hierarchical_definitions_ootb = {
                     'Technician_Secondary_RepairToolSD_MKD': 8405,
                     'Medium_ElfProjector': 8765,
                     'Soldier_Primary_Honorfusor': 8768,
+                    'Soldier_Secondary_ThumperD': 7462,
                 },
                 'bullet': {
                     'Soldier_Primary_AssaultRifle': 7385,
@@ -497,7 +499,6 @@ _hierarchical_definitions_ootb = {
                     'Brute_Primary_HeavySpinfusor': 7448,
                     'Brute_Primary_HeavySpinfusor_MKD': 8414,
                     'Juggernaut_Secondary_SpinfusorD': 7446,
-                    'Juggernaut_Secondary_SpinfusorD_MKD': 8413,
                     'Doombringer_Primary_HeavyBoltLauncher': 7452,
                     'Juggernaut_Secondary_HeavyTwinfusor': 8656,
                 },
