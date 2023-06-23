@@ -80,7 +80,7 @@ Only run once.
 
 or
 
-`wget -O /home/azureuser/taserver/common/game_items.py https://raw.githubusercontent.com/JigglyJoogins/tribes-vm/main/taserver/common/game_items.py`
+`wget -O /home/sandraker/taserver/common/game_items.py https://raw.githubusercontent.com/JigglyJoogins/tribes-vm/main/taserver/common/game_items.py`
 
 then
 
