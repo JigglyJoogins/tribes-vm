@@ -131,11 +131,11 @@ NA PUG Preset for the mixer community.
 
 #### Beowulf
 - Limit 1 per team.
-- Price: 35000.
+- Price: 100000.
 
 #### Shrike
 - Limit 1 per team.
-- Price: 35000.
+- Price: 65000.
 
 ### Miscellaneous
 - No custom physics presets.
