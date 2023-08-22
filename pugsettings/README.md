@@ -8,28 +8,38 @@ NA PUG Preset for the mixer community.
 - 10 minutes of overtime.
 
 ## Map Pool
-- Katabatic
-- ArxNovena
-- DangerousCrossing
-- Crossfire
-- Drydock
-- Terminus
-- Sunstar
-- BellaOmegaNS
-- CanyonCrusade
-- BellaOmega
-- Blueshift
-- Hellfire
-- IceCoaster
-- Perdition
-- Permafrost
-- Raindance
-- Stonehenge
-- Tartarus
-- TempleRuins
-- Blues
-- Incidamus
-- Periculo
+Katabatic
+ArxNovena
+DangerousCrossing
+Crossfire
+Drydock
+Terminus
+Sunstar
+BellaOmega NS
+CanyonCrusade
+Blueshift
+Hellfire
+IceCoaster
+Perdition
+Permafrost
+Raindance
+Stonehenge
+Tartarus
+TempleRuins
+Blues
+Incidamus
+Periculo
+Fracture
+Phlegethon
+Deserted Valley
+Acheron
+Styx
+Eclipse
+Polaris
+Oceanus
+Meridian
+Ascent
+Crash
 
 ## Rules/Changes
 
@@ -126,6 +136,8 @@ NA PUG Preset for the mixer community.
 - Nerfed final explosion damage from 350 to 300.
 
 ### Vehicles
+- Nerfed as they now take damage from chain & hitscan.
+
 #### Grav Cycle
 - Limit 4 per team.
 - Price: 5000.
