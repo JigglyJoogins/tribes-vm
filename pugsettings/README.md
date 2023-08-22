@@ -79,6 +79,7 @@ NA PUG Preset for the mixer community.
 - Nerfed Nova Blaster MX damage down to 150 (aggressive nerf, needs updating)
 - Nerfed Nova Blaster falloff to be the same as chain.
 - Nerfed Nova Blaster MX falloff to be the same as chain.
+- Nerfed T5 now holds 2 grenades (3 with safety third)
 
 #### Infiltrator
 - Limit 1 INF per team.

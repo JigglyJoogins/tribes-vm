@@ -194,7 +194,7 @@ local itemDefs = {
         changes={
             Damage = 1100,
             ExplosiveRadius = 682,
-            SpareAmmo = 2,
+            SpareAmmo = 1,
         },
     },
 }
