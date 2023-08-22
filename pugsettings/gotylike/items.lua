@@ -298,8 +298,8 @@ itemChangeDefs = {
                 SelfImpactMomentumMultiplier = 1.2,
                 SelfImpactExtraZMomentum = 90000,
                 DamageAgainstShrikeMultiplier = 3,
-                DamageAgainstGravCycleMultiplier = 1.2,
-                DamageAgainstBeowulfMultiplier = 1.2,
+                DamageAgainstGravCycleMultiplier = 3,
+                DamageAgainstBeowulfMultiplier = 3,
             }
         },
         {
@@ -310,7 +310,7 @@ itemChangeDefs = {
                 MaxDamageRangeProportion = 0.5,
                 MinDamageRangeProportion = 0.9,
                 CollisionSize = 42,
-                DamageAgainstShrikeMultiplier = 0.25,
+                DamageAgainstShrikeMultiplier = 1.2,
                 DamageAgainstGravCycleMultiplier = 1.2,
                 DamageAgainstBeowulfMultiplier = 1.2,
                 SelfImpactExtraZMomentum = 90000,
@@ -330,9 +330,9 @@ itemChangeDefs = {
                 MinDamageProportion = 0.75,
                 MaxDamageRangeProportion = 0.75,
                 MinDamageRangeProportion = 1,
-                DamageAgainstShrikeMultiplier = 0.65,
-                DamageAgainstGravCycleMultiplier = 0,
-                DamageAgainstBeowulfMultiplier = 0,
+                DamageAgainstShrikeMultiplier = 1.2,
+                DamageAgainstGravCycleMultiplier = 1.2,
+                DamageAgainstBeowulfMultiplier = 1.2,
             }
         },
         {
@@ -346,9 +346,9 @@ itemChangeDefs = {
                 MinDamageProportion = 0.3,
                 MaxDamageRangeProportion = 0.5,
                 MinDamageRangeProportion = 0.9,
-                DamageAgainstShrikeMultiplier = 0.65,
-                DamageAgainstGravCycleMultiplier = 0,
-                DamageAgainstBeowulfMultiplier = 0,
+                DamageAgainstShrikeMultiplier = 1.2,
+                DamageAgainstGravCycleMultiplier = 1.2,
+                DamageAgainstBeowulfMultiplier = 1.2,
             }
         },
         {
@@ -358,9 +358,9 @@ itemChangeDefs = {
                 MinDamageProportion = 0.50,
                 MaxDamageRangeProportion = 0.4,
                 MinDamageRangeProportion = 0.95,
-                DamageAgainstShrikeMultiplier = 0.65,
-                DamageAgainstGravCycleMultiplier = 0,
-                DamageAgainstBeowulfMultiplier = 0,
+                DamageAgainstShrikeMultiplier = 1.2,
+                DamageAgainstGravCycleMultiplier = 1.2,
+                DamageAgainstBeowulfMultiplier = 1.2,
                 Accuracy = 1.0,
                 AccuracyLossOnShot = 0.0,
                 AccuracyLossMax = 0.0,
