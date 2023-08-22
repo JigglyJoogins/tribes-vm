@@ -560,7 +560,7 @@ itemChangeDefs = {
             class="Light", -- Will apply across classes
             name="Wheel Deal",
             valueMods={
-                VehicleCostReduction = 0.3,
+                VehicleCostReduction = 0.0,
                 VehicleEnergyBuff = 0.25,
             }
         },
