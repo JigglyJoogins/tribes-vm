@@ -2,7 +2,7 @@
 # ./taserver.sh -d cappingsettings -c CookedPC -p 6 -q "ta.dodgesdomain.com"
 
 PS3='Which server would you like to start: '
-options=("PUG Server" "Mixer Server" "2v2 Server" "Mixer Testing Server" "OOTG Arena Server" "Arena Server" "PUB Server" "Exit Script")
+options=("PUG Server" "Mixer Server" "2v2 Server" "Mixer Testing Server" "Map Testing Server" "OOTG Arena Server" "Arena Server" "PUB Server" "Exit Script")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -39,6 +39,12 @@ do
         "Mixer Testing Server")
             echo "Starting Mixer Testing Server!"
             ./taserver.sh -d mixertestsettings -p 12 -q "ta.dodgesdomain.com" # -g "TAMods-Server.dll"
+            break
+            ;;
+        "Map Testing Server")
+            echo "Starting Mixer Testing Server!"
+            cp -R -c pugsettings maptest
+            ./taserver.sh -d maptest -c CookedPC -p 14 -q "ta.dodgesdomain.com"
             break
             ;;
         "Exit Script")
