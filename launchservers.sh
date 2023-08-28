@@ -43,7 +43,7 @@ do
             ;;
         "Map Testing Server")
             echo "Starting Mixer Testing Server!"
-            cp -R -c pugsettings maptest
+            cp -R -n pugsettings/. maptest
             ./taserver.sh -d maptest -c CookedPC -p 14 -q "ta.dodgesdomain.com"
             break
             ;;
