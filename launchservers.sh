@@ -28,6 +28,7 @@ do
             ;;
         "2v2 Server")
             echo "Starting 2v2 Server!"
+            cp -R -n pugsettings/. 2v2settings
             ./taserver.sh -d 2v2settings -p 8 -q "ta.dodgesdomain.com"
             break
             ;;

@@ -48,6 +48,7 @@ defaultGotySettings = {
     -- Score
     CTFCapLimit = 7,
     ArenaRounds = 1,
+    ArenaLives = 125,
 
     -- Flag
     FlagDragLight = 0,
