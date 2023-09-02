@@ -128,10 +128,11 @@ Crash
 - Nerfed nova colt minimum damage at range changed
 - Nerfed falloff at range
 - Nerfed nova colt max damage down to 150.
+- Nerfed fractal grenades by settings impulse from 40000 to 0
 
 ##### Extended Fractal
 - Nerfed ascent time from 1 to 2.
-- Nerfed impact momentum from 40000 to 20000.
+- Nerfed impact momentum from 40000 to 0.
 - Nerfed shard damage from 350 to 270.
 - Nerfed final explosion damage from 350 to 300.
 
