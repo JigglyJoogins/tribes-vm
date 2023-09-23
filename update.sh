@@ -17,6 +17,7 @@ rm -r ootgarenasettings
 rm -r 2v2settings
 rm -r taserver
 rm -r maptest
+rm -r cappingsettings
 
 rm -r launchservers.sh
 rm -r setmap2v2.sh
