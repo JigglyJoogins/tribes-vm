@@ -338,10 +338,11 @@ itemChangeDefs = {
         {
             group="shotguns", 
             changes={
-                Accuracy = 1.0,
-                AccuracyLossOnShot = 0,
-                AccuracyLossMax = 0,
-                AccuracyCorrectionRate = 0,
+                Accuracy = 0.86,
+                AccuracyLossMax = 0.3,
+                AccuracyLossOnShot = 0.0,
+                AccuracyCorrectionRate = 0.18,
+                ShotgunUseGOTYSpread = true,
                 -- GOTY falloff
                 MinDamageProportion = 0.3,
                 MaxDamageRangeProportion = 0.5,
