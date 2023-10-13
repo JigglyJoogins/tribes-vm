@@ -113,12 +113,12 @@ ServerSettings.MapRotation.addCustom("TrCTF-TreacherousPass")
 ServerSettings.MapRotation.addCustom("TrArena-Walledin")
 ServerSettings.MapRotation.addCustom("TrArena-ElysianBattleground")
 ServerSettings.MapRotation.addCustom("TrArena-Ruins")
-ServerSettings.MapRotation.addCustom("TrArena-Fraytown")
+-- ServerSettings.MapRotation.addCustom("TrArena-Fraytown")
 ServerSettings.MapRotation.addCustom("TrArena-Lavaarena")
-ServerSettings.MapRotation.addCustom("TrArena-Airarena")
-ServerSettings.MapRotation.addCustom("TrArena-Whiteout")
-ServerSettings.MapRotation.addCustom("TrArena-Undercroft")
-ServerSettings.MapRotation.addCustom("TrArena-Hinterland")
+-- ServerSettings.MapRotation.addCustom("TrArena-Airarena")
+-- ServerSettings.MapRotation.addCustom("TrArena-Whiteout")
+-- ServerSettings.MapRotation.addCustom("TrArena-Undercroft")
+-- ServerSettings.MapRotation.addCustom("TrArena-Hinterland")
 
 -------------- Rabbit --------------
 --[[
