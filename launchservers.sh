@@ -34,7 +34,7 @@ do
             ;;
         "Mixer Server")
             echo "Starting Mixer Server!"
-            ./taserver.sh -d mixersettings -p 10
+            ./taserver.sh -d mixersettings -p 10 -c CookedPC
             break
             ;;
         "Mixer Testing Server")
