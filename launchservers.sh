@@ -34,7 +34,7 @@ do
             ;;
         "Mixer Server")
             echo "Starting Mixer Server!"
-            ./taserver.sh -d mixersettings -p 10 -c CookedPC
+            ./taserver.sh -d mixersettings -p 10 -q "ta.dodgesdomain.com" -c CookedPC
             break
             ;;
         "Mixer Testing Server")
