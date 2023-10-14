@@ -7,6 +7,7 @@ chmod +x tribes-vm-main/taserver.sh
 chmod +x tribes-vm-main/launchservers.sh
 chmod +x tribes-vm-main/update.sh
 chmod +x tribes-vm-main/setmap2v2.sh
+chmod +x tribes-vm-main/grab_latest_maps.sh
 
 # Remove old folders/files
 rm -r arenasettings
@@ -19,9 +20,10 @@ rm -r taserver
 rm -r maptest
 rm -r cappingsettings
 
-rm -r launchservers.sh
-rm -r setmap2v2.sh
-rm -r taserver.sh
+rm launchservers.sh
+rm setmap2v2.sh
+rm taserver.sh
+rm grab_latest_maps.sh
 
 # Remove unessisary files
 rm tribvm.zip
