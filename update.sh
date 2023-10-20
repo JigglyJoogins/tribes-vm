@@ -19,6 +19,7 @@ rm -r 2v2settings
 rm -r taserver
 rm -r maptest
 rm -r cappingsettings
+rm -r pubsettings
 
 rm launchservers.sh
 rm setmap2v2.sh
@@ -33,7 +34,25 @@ rm -r tribes-vm-main/docs
 mv -f tribes-vm-main/update.sh update.new.sh
 mv -f tribes-vm-main/* .
 
+# Steal PUG Config
+cp -R -n pugsettings/. pubsettings
+cp -R -n pugsettings/. 2v2settings
+cp -R -n pugsettings/. maptest
+cp -R -n pugsettings/. cappingsettings
+
+# Naming Check
+while getopts 'a' flag
+do
+    case "${flag}" in
+        a) 
+            echo "Loading AU Config";
+            cp -f australia/* .
+            ;;
+    esac
+done
+
 # Cleanup
+rm -r australia
 rm -r tribes-vm-main
 
 # Update this script
