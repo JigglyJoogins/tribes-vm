@@ -46,7 +46,7 @@ do
     case "${flag}" in
         a) 
             echo "Loading AU Config";
-            cp -f australia/* .
+            cp -rf australia/* .
             ;;
     esac
 done
