@@ -1,12 +1,11 @@
 #!/bin/bash
 
-# With pug server running
-./taserver.sh -d pugsettings -q "ta.dodgesdomain.com" -p 50
-
 set -ex
 
 if [ ! -d CookedPC ] 
 then
+  ./taserver.sh -d pugsettings -q "ta.dodgesdomain.com" -p 50
+
   docker cp taserver_pugsettings_50:/app/Tribes/TribesGame/CookedPC/ CookedPC
 
   docker stop taserver_pugsettings_50
