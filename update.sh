@@ -1,5 +1,5 @@
 # Download and unzip latest commit
-wget -Oq tribvm.zip https://github.com/JigglyJoogins/tribes-vm/archive/refs/heads/main.zip
+wget -O -q tribvm.zip https://github.com/JigglyJoogins/tribes-vm/archive/refs/heads/main.zip
 unzip -oq tribvm.zip
 
 # Setup Permissions
