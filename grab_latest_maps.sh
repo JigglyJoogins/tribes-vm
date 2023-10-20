@@ -1,11 +1,15 @@
 #!/bin/bash
 
 # With pug server running
-# ./taserver.sh -d pugsettings -q "ta.dodgesdomain.com"
+./taserver.sh -d pugsettings -q "ta.dodgesdomain.com" -p 50
 
 set -ex
 
-docker cp taserver_pugsettings_0:/app/Tribes/TribesGame/CookedPC/* CookedPC
+docker cp taserver_pugsettings_50:/app/Tribes/TribesGame/CookedPC/* CookedPC
+
+docker stop taserver_pugsettings_50
+
+docker rm -v taserver_pugsettings_50
 
 function install_tamods_package() {
   tmp_file=$(mktemp) # tmp file for download
