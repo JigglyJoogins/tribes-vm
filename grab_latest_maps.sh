@@ -5,7 +5,7 @@
 
 set -ex
 
-docker cp taserver_pugsettings_50:/app/Tribes/TribesGame/CookedPC/* CookedPC
+docker cp taserver_pugsettings_50:/app/Tribes/TribesGame/CookedPC/ CookedPC
 
 docker stop taserver_pugsettings_50
 
