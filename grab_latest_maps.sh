@@ -5,7 +5,7 @@
 
 set -ex
 
-if ! [ -e CookedPC/*.u ]; then
+if [ ! -d CookedPC ] then
   docker cp taserver_pugsettings_50:/app/Tribes/TribesGame/CookedPC/ CookedPC
 
   docker stop taserver_pugsettings_50
