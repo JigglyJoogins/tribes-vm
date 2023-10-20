@@ -5,11 +5,13 @@
 
 set -ex
 
-docker cp taserver_pugsettings_50:/app/Tribes/TribesGame/CookedPC/ CookedPC
+if [ ! -e CookedPC/*.u ]; then
+  docker cp taserver_pugsettings_50:/app/Tribes/TribesGame/CookedPC/ CookedPC
 
-docker stop taserver_pugsettings_50
+  docker stop taserver_pugsettings_50
 
-docker rm -v taserver_pugsettings_50
+  docker rm -v taserver_pugsettings_50
+fi
 
 function install_tamods_package() {
   tmp_file=$(mktemp) # tmp file for download
