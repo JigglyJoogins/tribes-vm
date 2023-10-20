@@ -7,6 +7,8 @@ chmod +x tribes-vm-main/taserver.sh
 chmod +x tribes-vm-main/launchservers.sh
 chmod +x tribes-vm-main/update.sh
 chmod +x tribes-vm-main/grab_latest_maps.sh
+chmod +x tribes-vm-main/lagcomp.sh
+chmod +x tribes-vm-main/taserver/game_server_launcher/winegameserverprocess.py
 
 # Remove old folders/files
 rm -r mixersettings
@@ -20,6 +22,7 @@ rm -r pubsettings
 rm launchservers.sh
 rm taserver.sh
 rm grab_latest_maps.sh
+rm lagcomp.sh
 
 # Remove unessisary files
 rm tribvm.zip
