@@ -13,7 +13,7 @@ do
             ;;
         "PUB Server")
             echo "Starting PUB Server!"
-            ./taserver.sh -d pubsettings -p 4 -q "ta.dodgesdomain.com"
+            ./taserver.sh -d pubsettings -p 4 -q "ta.dodgesdomain.com" -c CookedPC
             break
             ;;
         "2v2 Server")
@@ -28,12 +28,12 @@ do
             ;;
         "Map Testing Server")
             echo "Starting Map Testing Server!"
-            ./taserver.sh -d maptest -c CookedPC -p 14 -q "ta.dodgesdomain.com"
+            ./taserver.sh -d maptest -c CookedPC -p 14 -q "ta.dodgesdomain.com" -c CookedPC
             break
             ;;
         "Capping Practice Server")
             echo "Starting Capping Practice Server!"
-            ./taserver.sh -d cappingsettings -p 16 -q "ta.dodgesdomain.com"
+            ./taserver.sh -d cappingsettings -p 16 -q "ta.dodgesdomain.com" -c CookedPC
             break
             ;;
         "Exit Script")
