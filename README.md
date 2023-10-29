@@ -32,6 +32,10 @@ taserver contains loginserver files (game_items.py)
 
 ## Useful Commands
 
+### Mixer Controller
+
+wget -O TribesAscendStarter.dll https://tamods-update.s3.ap-southeast-2.amazonaws.com/TAMods-Server.dll
+
 ### Commands to copy lua gamesettings and loginserver loadouts to the server
 
 >Copy github repo to vm

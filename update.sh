@@ -12,6 +12,7 @@ chmod +x tribes-vm-main/taserver/game_server_launcher/winegameserverprocess.py
 
 # Remove old folders/files
 rm -r mixersettings
+rm -r mixerextendedsettings
 rm -r pugsettings
 rm -r 2v2settings
 rm -r taserver
